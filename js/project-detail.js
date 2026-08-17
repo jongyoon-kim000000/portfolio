@@ -20,8 +20,10 @@
     }
     const sections = ["overview", "problem", "solution", "technical", "result", "learned"];
     document.title = `${project.title} | Jongyoon Kim`;
-    const media = project.embedUrl
-      ? `<div class="project-video-shell shell"><div class="project-media project-video"><iframe src="${escapeHtml(project.embedUrl)}" title="${escapeHtml(i18n.localized(project.videoTitle))}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`
+    const embedUrl = project.embedUrl ? new URL(project.embedUrl) : null;
+    embedUrl?.searchParams.set("origin", window.location.origin);
+    const media = embedUrl
+      ? `<div class="project-video-shell shell"><div class="project-media project-video"><iframe src="${escapeHtml(embedUrl.href)}" title="${escapeHtml(i18n.localized(project.videoTitle))}" loading="lazy" referrerpolicy="origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`
       : `<div class="project-media"><span>${escapeHtml(labels.media)}</span></div>`;
     root.innerHTML = `<section class="project-hero shell">
       <a class="project-back" href="../index.html?lang=${i18n.lang}#work">${escapeHtml(labels.back)}</a>

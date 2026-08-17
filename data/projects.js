@@ -23,7 +23,7 @@ window.PORTFOLIO_PROJECTS = [
       zh: "Project TAL官方预告片的YouTube缩略图"
     },
     externalUrl: "https://www.youtube.com/watch?v=mm6w2ufD6ME",
-    embedUrl: "https://www.youtube-nocookie.com/embed/mm6w2ufD6ME?rel=0&modestbranding=1",
+    embedUrl: "https://www.youtube.com/embed/mm6w2ufD6ME?rel=0&modestbranding=1",
     videoTitle: {
       ja: "Project TAL 公式トレーラー",
       en: "Project TAL Official Trailer",
