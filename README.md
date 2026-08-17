@@ -17,7 +17,7 @@ Then open `http://localhost:8000/`.
 - `data/projects.js`: published, WIP, planned and private project records.
 - `data/profile.js`: skills, production responsibilities, showreel and public community experience.
 - `data/timeline.js`: concise public growth timeline.
-- `data/translations.js`: shared Japanese and English interface copy.
+- `data/translations.js`: shared Japanese, English, Korean and Simplified Chinese interface copy.
 - `projects/*.html`: lightweight page shells using the shared project-detail renderer.
 
 Projects marked `planned` or `private` do not appear on the home page. A WIP project appears only when it has both `status: "wip"` and `showWip: true`.

@@ -55,7 +55,7 @@ window.PORTFOLIO_PROFILE = {
     { name: "FullBody IK", detail: { ja: "Technical Animation", en: "Technical animation", ko: "테크니컬 애니메이션", zh: "技术动画" }, status: "learning" }
   ],
   community: {
-    visible: true,
+    visible: false,
     organization: "CulCom",
     role: { ja: "語学スタディリーダー", en: "Language Study Leader", ko: "외국어 스터디 리더", zh: "语言学习小组负责人" },
     period: "2026 — Present",

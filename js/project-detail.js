@@ -20,10 +20,8 @@
     }
     const sections = ["overview", "problem", "solution", "technical", "result", "learned"];
     document.title = `${project.title} | Jongyoon Kim`;
-    const embedUrl = project.embedUrl ? new URL(project.embedUrl) : null;
-    embedUrl?.searchParams.set("origin", window.location.origin);
-    const media = embedUrl
-      ? `<div class="project-video-shell shell"><div class="project-media project-video"><iframe src="${escapeHtml(embedUrl.href)}" title="${escapeHtml(i18n.localized(project.videoTitle))}" loading="lazy" referrerpolicy="origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`
+    const media = project.externalUrl && project.thumbnail
+      ? `<div class="project-video-shell shell"><a class="project-media project-video" href="${escapeHtml(project.externalUrl)}" target="_blank" rel="noopener" aria-label="${escapeHtml(labels.official)}"><img src="${escapeHtml(project.thumbnail)}" alt="${escapeHtml(i18n.localized(project.thumbnailAlt))}" loading="eager" decoding="async"><span class="project-video-shade" aria-hidden="true"></span><span class="project-video-play" aria-hidden="true">▶</span><span class="project-video-label">${escapeHtml(labels.official)}</span></a></div>`
       : `<div class="project-media"><span>${escapeHtml(labels.media)}</span></div>`;
     root.innerHTML = `<section class="project-hero shell">
       <a class="project-back" href="../index.html?lang=${i18n.lang}#work">${escapeHtml(labels.back)}</a>

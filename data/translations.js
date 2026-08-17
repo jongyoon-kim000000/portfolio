@@ -37,3 +37,8 @@ window.PORTFOLIO_TRANSLATIONS = {
     "nav.home":"首页","work.libraryCta":"DCC视频资料库 →","media.projectTal":"Project TAL","media.title":"DCC与实时技术记录","media.intro":"通过短视频记录角色绑定、自动化与实时角色工作流。","media.note":"即使DCC不同，层级、Constraint、Matrix、自动化和面向美术人员的工具设计经验仍可迁移。","media.filterTitle":"按工具筛选视频","media.category.all":"全部","media.category.max":"3ds Max","media.category.maya":"Maya","media.category.motionbuilder":"MotionBuilder","media.category.ue5":"Unreal Engine 5","media.categoryHint.all":"全部视频","media.categoryHint.max":"绑定与工具","media.categoryHint.maya":"多DCC工作流","media.categoryHint.motionbuilder":"动画工作流","media.categoryHint.ue5":"实时角色","media.play":"播放视频","media.youtube":"在YouTube观看","media.empty":"公开的MotionBuilder视频准备完成后将添加。","media.featured":"重点作品"
   }
 };
+
+Object.assign(window.PORTFOLIO_TRANSLATIONS.ja, {"work.title":"主要作品","work.libraryCta":"DCC Media Library","media.play":"YouTubeで再生（新しいタブ）"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.en, {"work.libraryCta":"DCC Media Library","media.play":"Play on YouTube (new tab)"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.ko, {"work.libraryCta":"DCC 영상 라이브러리","media.play":"YouTube에서 재생 (새 탭)"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.zh, {"work.libraryCta":"DCC视频资料库","media.play":"在YouTube播放（新标签页）"});

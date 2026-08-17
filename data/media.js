@@ -1,7 +1,7 @@
 /* Public YouTube studies grouped by DCC / engine. Add only videos that are already public. */
 window.PORTFOLIO_MEDIA = [
   {
-    id: "lJAsXDW2JBU", category: "max", featured: true,
+    id: "lJAsXDW2JBU", category: "max", featured: true, customCover: true,
     title: "3ds Max Rigging & Tools Portfolio",
     summary: { ja: "3ds Max環境で制作してきたリギングとツール開発経験をまとめた主要ポートフォリオ映像。", en: "My primary 3ds Max portfolio video, bringing together rigging and tool-development work in this DCC environment.", ko: "3ds Max 환경에서 제작해 온 리깅과 도구 개발 경험을 모은 대표 포트폴리오 영상입니다.", zh: "汇总我在3ds Max环境中角色绑定与工具开发经验的重点作品视频。" },
     tags: ["3ds Max", "Rigging", "MaxScript", "Portfolio"]

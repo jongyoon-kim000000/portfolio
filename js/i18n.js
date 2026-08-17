@@ -4,6 +4,17 @@
   const requested = params.get("lang");
   const initial = supported.includes(requested) ? requested : "ja";
 
+  function syncInternalLinks(lang) {
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const raw = link.getAttribute("href");
+      if (!raw || raw.startsWith("#") || raw.startsWith("mailto:") || raw.startsWith("tel:")) return;
+      const url = new URL(raw, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      url.searchParams.set("lang", lang);
+      link.href = url.href;
+    });
+  }
+
   window.PortfolioI18n = {
     lang: initial,
     localized(value) {
@@ -16,7 +27,7 @@
     apply(lang, updateUrl = true) {
       if (!supported.includes(lang)) return;
       this.lang = lang;
-      document.documentElement.lang = lang;
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
       document.querySelectorAll("[data-i18n]").forEach((node) => {
         node.textContent = this.text(node.dataset.i18n);
       });
@@ -29,6 +40,7 @@
         history.replaceState({}, "", url);
       }
       window.dispatchEvent(new CustomEvent("portfolio:language", { detail: { lang } }));
+      queueMicrotask(() => syncInternalLinks(lang));
     }
   };
 
