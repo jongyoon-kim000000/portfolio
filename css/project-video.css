@@ -1,0 +1,27 @@
+.project-video-shell {
+  padding-bottom: 22px;
+}
+
+.project-video {
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  background: #050607;
+}
+
+.project-video::before {
+  display: none;
+}
+
+.project-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 700px) {
+  .project-video {
+    aspect-ratio: 16 / 9;
+  }
+}

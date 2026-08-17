@@ -20,6 +20,9 @@
     }
     const sections = ["overview", "problem", "solution", "technical", "result", "learned"];
     document.title = `${project.title} | Jongyoon Kim`;
+    const media = project.embedUrl
+      ? `<div class="project-video-shell shell"><div class="project-media project-video"><iframe src="${escapeHtml(project.embedUrl)}" title="${escapeHtml(i18n.localized(project.videoTitle))}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>`
+      : `<div class="project-media"><span>${escapeHtml(labels.media)}</span></div>`;
     root.innerHTML = `<section class="project-hero shell">
       <a class="project-back" href="../index.html?lang=${i18n.lang}#work">${escapeHtml(labels.back)}</a>
       <p class="project-kicker">${escapeHtml(i18n.localized(project.category))}</p>
@@ -27,7 +30,7 @@
       <p class="project-lead">${escapeHtml(i18n.localized(project.summary))}</p>
       <ul class="tag-list" aria-label="Technologies">${project.technologies.map((tag) => `<li class="tag">${escapeHtml(tag)}</li>`).join("")}</ul>
     </section>
-    <div class="project-media"><span>${escapeHtml(labels.media)}</span></div>
+    ${media}
     <div class="project-content shell">${sections.map((key, index) => {
       const content = project.sections[key];
       const body = Array.isArray(content) ? `<ul class="breakdown-list">${content.map((entry) => `<li>${escapeHtml(entry)}</li>`).join("")}</ul>` : `<p>${escapeHtml(i18n.localized(content))}</p>`;
