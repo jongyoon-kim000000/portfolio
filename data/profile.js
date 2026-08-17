@@ -6,7 +6,7 @@ window.PORTFOLIO_PROFILE = {
     email: { visible: true, url: "mailto:trueb000@naver.com" },
     youtube: { visible: true, url: "https://youtube.com/@lil_jong_lil" },
     linkedin: { visible: true, url: "https://www.linkedin.com/in/liljonglil" },
-    blog: { visible: true, url: "https://m.blog.naver.com/trueb000" },
+    blog: { visible: false, url: "https://m.blog.naver.com/trueb000" },
     github: { visible: false, url: "" },
     twitter: { visible: false, url: "" }
   },

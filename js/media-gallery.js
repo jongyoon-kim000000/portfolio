@@ -13,7 +13,7 @@
 
     tabs.innerHTML = categories.map((category) => {
       const count = category === "all" ? videos.length : videos.filter((video) => video.category === category).length;
-      return `<button type="button" role="tab" aria-selected="${category === activeCategory}" data-category="${category}">${escapeHtml(i18n.text(`media.category.${category}`))}<span>${String(count).padStart(2, "0")}</span></button>`;
+      return `<button type="button" role="tab" aria-selected="${category === activeCategory}" data-category="${category}"><strong>${escapeHtml(i18n.text(`media.category.${category}`))}</strong><span class="media-tab-meta"><em>${escapeHtml(i18n.text(`media.categoryHint.${category}`))}</em><b>${String(count).padStart(2, "0")}</b></span></button>`;
     }).join("");
 
     const visible = activeCategory === "all" ? videos : videos.filter((video) => video.category === activeCategory);
