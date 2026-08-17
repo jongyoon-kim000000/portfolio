@@ -19,7 +19,7 @@
     const visible = activeCategory === "all" ? videos : videos.filter((video) => video.category === activeCategory);
     grid.setAttribute("role", "tabpanel");
     grid.setAttribute("aria-labelledby", `media-tab-${activeCategory}`);
-    grid.innerHTML = visible.length ? visible.map((video) => `<article class="media-card${video.featured ? " is-featured" : ""}">
+    grid.innerHTML = visible.length ? visible.map((video, index) => `<article class="media-card${video.featured ? " is-featured" : ""}" style="--card-order:${index}">
       <div class="media-frame">
         <a class="media-play" href="https://www.youtube.com/watch?v=${escapeHtml(video.id)}" target="_blank" rel="noopener" aria-label="${escapeHtml(i18n.text("media.play"))}: ${escapeHtml(video.title)}">
           ${video.customCover ? `<span class="media-custom-cover" aria-hidden="true"><span class="cover-kicker">PORTFOLIO · 3DS MAX</span><strong>Rigging Portfolio</strong><span class="cover-meta">Kim JongYoon</span></span>` : `<img src="https://i.ytimg.com/vi/${escapeHtml(video.id)}/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/${escapeHtml(video.id)}/hqdefault.jpg" alt="${escapeHtml(video.title)}" loading="lazy" decoding="async">`}
@@ -34,7 +34,7 @@
       const url = new URL(window.location.href);
       if (activeCategory === "all") url.searchParams.delete("tool"); else url.searchParams.set("tool", activeCategory);
       history.replaceState({}, "", url);
-      render(true);
+      render(false);
     }));
     tabs.addEventListener("keydown", (event) => {
       if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;

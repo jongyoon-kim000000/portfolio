@@ -38,7 +38,7 @@ window.PORTFOLIO_TRANSLATIONS = {
   }
 };
 
-Object.assign(window.PORTFOLIO_TRANSLATIONS.ja, {"work.title":"主要作品","work.libraryCta":"DCC Media Library","media.play":"YouTubeで再生（新しいタブ）"});
-Object.assign(window.PORTFOLIO_TRANSLATIONS.en, {"work.libraryCta":"DCC Media Library","media.play":"Play on YouTube (new tab)"});
-Object.assign(window.PORTFOLIO_TRANSLATIONS.ko, {"work.libraryCta":"DCC 영상 라이브러리","media.play":"YouTube에서 재생 (새 탭)"});
-Object.assign(window.PORTFOLIO_TRANSLATIONS.zh, {"work.libraryCta":"DCC视频资料库","media.play":"在YouTube播放（新标签页）"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.ja, {"work.title":"主要作品","work.libraryCta":"DCC Media Library","media.play":"YouTubeで再生（新しいタブ）","media.swipeHint":"スワイプしてツール別に見る →"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.en, {"work.libraryCta":"DCC Media Library","media.play":"Play on YouTube (new tab)","media.swipeHint":"Swipe to explore tool categories →"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.ko, {"work.libraryCta":"DCC 영상 라이브러리","media.play":"YouTube에서 재생 (새 탭)","media.swipeHint":"좌우로 밀어 도구별 영상 보기 →"});
+Object.assign(window.PORTFOLIO_TRANSLATIONS.zh, {"work.libraryCta":"DCC视频资料库","media.play":"在YouTube播放（新标签页）","media.swipeHint":"左右滑动查看工具分类 →"});

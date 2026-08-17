@@ -31,7 +31,10 @@
 
   function initSectionReveals() {
     if (reducedMotion.matches || !("IntersectionObserver" in window)) return;
-    const items = document.querySelectorAll(".section-heading, .project-card, .media-card, .production-card, .timeline-item, .skill-group, .community-card, .about-copy, .breakdown-section, .credentials article, .contact-inner");
+    const items = document.querySelectorAll(".section-heading, .project-card, .production-card, .timeline-item, .skill-group-heading, .skill-list li, .community-card, .about-copy, .breakdown-section, .credentials article, .contact-inner");
+    document.querySelectorAll(".skill-list").forEach((list) => {
+      list.querySelectorAll("li").forEach((item, index) => item.style.setProperty("--reveal-delay", `${index * 70}ms`));
+    });
     items.forEach((item) => item.classList.add("reveal-item"));
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -43,9 +46,25 @@
     items.forEach((item) => observer.observe(item));
   }
 
+  function initTimelineProgress() {
+    const timeline = document.querySelector(".timeline");
+    if (!timeline || reducedMotion.matches) return;
+    const update = () => {
+      const bounds = timeline.getBoundingClientRect();
+      const start = window.innerHeight * .78;
+      const range = Math.max(1, bounds.height + window.innerHeight * .24);
+      const value = Math.max(0, Math.min(1, (start - bounds.top) / range));
+      timeline.style.setProperty("--timeline-progress", value.toFixed(3));
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     initPointerLight();
     initScrollProgress();
+    initTimelineProgress();
     requestAnimationFrame(initSectionReveals);
   });
 })();
