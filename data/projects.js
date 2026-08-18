@@ -66,6 +66,71 @@ window.PORTFOLIO_PROJECTS = [
     }
   },
   {
+    id: "aion2",
+    status: "published",
+    category: { ja: "プロダクション経験", en: "Production Experience", ko: "프로덕션 경험", zh: "项目制作经验" },
+    title: "AION 2",
+    shortLabel: "AION / 2",
+    summary: {
+      ja: "キャラクターカスタマイズに対応するPC/NPC装備のリギング・スキニングとUE5物理セットアップ。",
+      en: "PC/NPC equipment rigging and skinning against body customization, with UE5 physics setup.",
+      ko: "체형 커스터마이징에 대응하는 PC/NPC 장비 리깅·스키닝과 UE5 물리 세팅.",
+      zh: "对应角色体型自定义的PC/NPC装备绑定、蒙皮与UE5物理设置。"
+    },
+    technologies: ["Unreal Engine 5", "3ds Max", "Rigging", "Skinning"],
+    detailPage: "projects/aion2.html",
+    visualType: "production",
+    thumbnail: "https://i.ytimg.com/vi/EI6qhsPIcd0/maxresdefault.jpg",
+    thumbnailAlt: {
+      ja: "AION 2公式映像のYouTubeサムネイル",
+      en: "YouTube thumbnail for the official AION 2 video",
+      ko: "AION 2 공식 영상 YouTube 썸네일",
+      zh: "AION 2官方视频的YouTube缩略图"
+    },
+    externalUrl: "https://www.youtube.com/watch?v=EI6qhsPIcd0",
+    embedUrl: "https://www.youtube.com/embed/EI6qhsPIcd0?rel=0&modestbranding=1",
+    videoTitle: {
+      ja: "AION 2 公式映像",
+      en: "AION 2 Official Video",
+      ko: "AION 2 공식 영상",
+      zh: "AION 2 官方视频"
+    },
+    nda: true,
+    sections: {
+      overview: {
+        ja: "NCSoftのMMORPG「AION 2」開発に契約社員として参加しました（2024年2月〜6月）。キャラクターカスタマイズに対応する装備アセットのリギング・スキニングを中心に担当し、実プロダクションの品質基準とパイプラインを経験しました。公開情報の範囲で担当領域を紹介します。",
+        en: "I joined NCSoft's MMORPG AION 2 as a contract rigging artist (Feb – Jun 2024), focusing on rigging and skinning equipment assets against the character customization system. This was my first experience with a large studio's production quality bar and pipeline. This page uses public information only.",
+        ko: "NCSoft의 MMORPG 'AION 2' 개발에 계약직으로 참여했습니다(2024년 2월~6월). 캐릭터 커스터마이징에 대응하는 장비 에셋의 리깅·스키닝을 중심으로 담당하며 대형 스튜디오의 품질 기준과 파이프라인을 경험했습니다. 공개 정보만 사용해 담당 영역을 소개합니다.",
+        zh: "我以合同制身份参与了NCSoft的MMORPG《AION 2》开发（2024年2月至6月），主要负责与角色体型自定义系统对应的装备资产绑定与蒙皮，并体验了大型工作室的品质标准与制作管线。本页仅使用公开信息。"
+      },
+      problem: {
+        ja: "体型カスタマイズを持つMMORPGでは、武器・衣装・防具などの装備が全ての体型バリエーションで破綻なく変形する必要があります。大量の装備アセットに対する反復的なリギング・スキニング作業は、品質の一貫性と作業速度の両立が課題になります。",
+        en: "In an MMORPG with body customization, every weapon, outfit and armor piece must deform correctly across all body variations. Rigging and skinning a large volume of equipment assets makes consistency and throughput compete with each other.",
+        ko: "체형 커스터마이징이 있는 MMORPG에서는 무기·복식·방어구 등 모든 장비가 모든 체형 변형에서 깨짐 없이 동작해야 합니다. 대량의 장비 에셋에 대한 반복적인 리깅·스키닝 작업에서는 품질 일관성과 작업 속도의 양립이 과제가 됩니다.",
+        zh: "在具有体型自定义的MMORPG中，武器、服饰、防具等所有装备都必须在全部体型变化下正确变形。面对大量装备资产的重复绑定与蒙皮工作，品质一致性与效率成为核心挑战。"
+      },
+      solution: {
+        ja: "PC/NPCの各種装備をカスタマイズ体系に合わせてリギング・スキニングし、UE5 Animation Blueprintでの物理セットアップ、Skeletal Mesh LODによる最適化を担当しました。反復作業はMaxScriptで自動化し、作業効率を高めました。",
+        en: "I rigged and skinned PC/NPC equipment against the customization system, set up physics in UE5 Animation Blueprints and optimized assets through Skeletal Mesh LODs. Repetitive steps were automated with MaxScript to raise throughput.",
+        ko: "PC/NPC의 각종 장비를 커스터마이징 체계에 맞춰 리깅·스키닝하고, UE5 Animation Blueprint 물리 세팅과 Skeletal Mesh LOD 최적화를 담당했습니다. 반복 작업은 MaxScript로 자동화해 업무 효율을 높였습니다.",
+        zh: "我根据自定义体系对PC/NPC各类装备进行绑定与蒙皮，负责UE5 Animation Blueprint物理设置和Skeletal Mesh LOD优化，并用MaxScript将重复工作自动化以提高效率。"
+      },
+      technical: ["Equipment Rigging / Skinning", "Body Customization Support", "UE5 Animation Blueprint Physics", "Skeletal Mesh LOD Optimization", "MaxScript Automation"],
+      result: {
+        ja: "カスタマイズ対応の装備アセットを安定して供給し、LOD最適化と自動化によって制作効率の改善に貢献しました。",
+        en: "I delivered customization-ready equipment assets reliably and contributed to production efficiency through LOD optimization and automation.",
+        ko: "커스터마이징에 대응하는 장비 에셋을 안정적으로 공급하고, LOD 최적화와 자동화를 통해 제작 효율 개선에 기여했습니다.",
+        zh: "稳定交付支持自定义的装备资产，并通过LOD优化与自动化为制作效率的提升做出贡献。"
+      },
+      learned: {
+        ja: "大規模スタジオのアセットパイプライン、ライブ品質基準、カスタマイズシステムを前提としたリギング設計を学び、次のプロダクション経験の土台になりました。",
+        en: "I learned large-studio asset pipelines, live-quality standards and rigging design around a customization system — the foundation for my next production role.",
+        ko: "대형 스튜디오의 에셋 파이프라인, 라이브 품질 기준, 커스터마이징 시스템을 전제로 한 리깅 설계를 배웠고, 다음 프로덕션 경험의 토대가 되었습니다.",
+        zh: "我学习了大型工作室的资产管线、上线品质标准以及基于自定义系统的绑定设计，为之后的制作经历打下了基础。"
+      }
+    }
+  },
+  {
     id: "variable-fk",
     status: "planned",
     category: { ja: "リギングシステム / ツール開発", en: "Rigging System / Tool Development" },

@@ -8,7 +8,7 @@
 
   function render(focusActiveTab = false) {
     const i18n = window.PortfolioI18n;
-    const videos = window.PORTFOLIO_MEDIA || [];
+    const videos = (window.PORTFOLIO_MEDIA || []).filter((video) => video.status !== "private");
     const tabs = document.querySelector("#media-tabs");
     const grid = document.querySelector("#media-grid");
     if (!tabs || !grid) return;
