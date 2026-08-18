@@ -7,7 +7,7 @@
     const grid = document.querySelector("#project-grid");
     if (!grid) return;
     const i18n = window.PortfolioI18n;
-    const projects = (window.PORTFOLIO_PROJECTS || []).filter((project) => project.status === "published" || (project.status === "wip" && project.showWip));
+    const projects = (window.PORTFOLIO_PROJECTS || []).filter((project) => project.showOnHome !== false && (project.status === "published" || (project.status === "wip" && project.showWip)));
 
     grid.classList.toggle("is-single", projects.length === 1);
     grid.innerHTML = projects.map((project, index) => {

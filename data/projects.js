@@ -68,6 +68,7 @@ window.PORTFOLIO_PROJECTS = [
   {
     id: "aion2",
     status: "published",
+    showOnHome: false,
     category: { ja: "プロダクション経験", en: "Production Experience", ko: "프로덕션 경험", zh: "项目制作经验" },
     title: "AION 2",
     shortLabel: "AION / 2",
@@ -133,6 +134,7 @@ window.PORTFOLIO_PROJECTS = [
   {
     id: "serva-me",
     status: "published",
+    showOnHome: false,
     category: { ja: "学生制作 / リリース作品", en: "Academic / Released Project", ko: "졸업작품 / 출시 작품", zh: "学生制作 / 已发行作品" },
     title: "SERVA ME",
     shortLabel: "SERVA / ME",
