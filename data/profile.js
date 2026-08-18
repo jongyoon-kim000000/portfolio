@@ -52,7 +52,7 @@ window.PORTFOLIO_PROFILE = {
     { name: "Maya", detail: { ja: "リギング・スキニング", en: "Rigging & skinning", ko: "리깅·스키닝", zh: "绑定与蒙皮" }, status: "learning" },
     { name: "mGear", detail: { ja: "モジュラーリグ", en: "Modular rig architecture", ko: "모듈형 리그", zh: "模块化绑定架构" }, status: "learning" },
     { name: "Maya Python", detail: { ja: "リグ自動化", en: "Rig automation", ko: "리그 자동화", zh: "绑定自动化" }, status: "learning" },
-    { name: "FullBody IK", detail: { ja: "Technical Animation", en: "Technical animation", ko: "테크니컬 애니메이션", zh: "技术动画" }, status: "learning" }
+    { name: "UE Control Rig", detail: { ja: "FullBody IK・プロシージャルリギング", en: "FullBody IK & procedural rigging", ko: "FullBody IK·프로시저럴 리깅", zh: "FullBody IK与程序化绑定" }, status: "learning" }
   ],
   community: {
     visible: false,

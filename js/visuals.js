@@ -2,19 +2,6 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const finePointer = window.matchMedia("(pointer: fine)");
 
-  function initPointerLight() {
-    if (reducedMotion.matches || !finePointer.matches) return;
-    let frame = 0;
-    window.addEventListener("pointermove", (event) => {
-      if (frame) return;
-      frame = requestAnimationFrame(() => {
-        document.documentElement.style.setProperty("--cursor-x", `${event.clientX}px`);
-        document.documentElement.style.setProperty("--cursor-y", `${event.clientY}px`);
-        frame = 0;
-      });
-    }, { passive: true });
-  }
-
   function initScrollProgress() {
     const progress = document.createElement("div");
     progress.className = "scroll-progress";
@@ -35,7 +22,10 @@
     document.querySelectorAll(".skill-list").forEach((list) => {
       list.querySelectorAll("li").forEach((item, index) => item.style.setProperty("--reveal-delay", `${index * 70}ms`));
     });
+    document.querySelectorAll(".timeline .timeline-item, .credentials article").forEach((item, index) => item.style.setProperty("--reveal-delay", `${(index % 5) * 80}ms`));
     items.forEach((item) => item.classList.add("reveal-item"));
+    document.querySelectorAll(".section-heading").forEach((item) => item.classList.add("reveal-left"));
+    document.querySelectorAll(".project-card").forEach((item) => item.classList.add("reveal-scale"));
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
@@ -61,10 +51,28 @@
     window.addEventListener("resize", update, { passive: true });
   }
 
+  function initMagneticButtons() {
+    if (reducedMotion.matches || !finePointer.matches) return;
+    const baseTransition = "background .2s,border-color .2s,color .2s";
+    document.querySelectorAll(".button,.contact-email").forEach((el) => {
+      el.addEventListener("pointermove", (event) => {
+        const bounds = el.getBoundingClientRect();
+        const dx = (event.clientX - bounds.left - bounds.width / 2) * .22;
+        const dy = (event.clientY - bounds.top - bounds.height / 2) * .22;
+        el.style.transition = baseTransition;
+        el.style.translate = `${Math.max(-7, Math.min(7, dx))}px ${Math.max(-7, Math.min(7, dy))}px`;
+      }, { passive: true });
+      el.addEventListener("pointerleave", () => {
+        el.style.transition = `${baseTransition},translate .5s var(--ease-spring)`;
+        el.style.translate = "0 0";
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
-    initPointerLight();
     initScrollProgress();
     initTimelineProgress();
+    initMagneticButtons();
     requestAnimationFrame(initSectionReveals);
   });
 })();

@@ -1,5 +1,7 @@
 (function () {
   const escapeHtml = (value = "") => String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[char]);
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const coarsePointer = window.matchMedia("(pointer: coarse)");
 
   function renderProjects() {
     const grid = document.querySelector("#project-grid");
@@ -14,10 +16,11 @@
       const visual = project.thumbnail
         ? `<img class="project-thumbnail" src="${escapeHtml(project.thumbnail)}" alt="${escapeHtml(i18n.localized(project.thumbnailAlt))}" loading="lazy" decoding="async"><span class="media-source">OFFICIAL TRAILER</span>`
         : `<span class="visual-label"><small>0${index + 1} / ${escapeHtml(i18n.localized(project.category))}</small>${escapeHtml(project.shortLabel || project.title)}</span>`;
-      return `<article class="project-card">
+      const preview = project.preview ? `<video class="project-preview" muted loop playsinline preload="none" src="${escapeHtml(project.preview)}"></video>` : "";
+      return `<article class="project-card" style="--i:${index}">
         <a href="${escapeHtml(url.href)}" aria-label="${escapeHtml(project.title)} — ${escapeHtml(i18n.text("common.viewBreakdown"))}">
           <div class="project-visual ${escapeHtml(project.visualType || "tool")}">
-            ${visual}
+            ${visual}${preview}
           </div>
           <div class="project-card-body">
             <div class="project-card-topline"><span>${escapeHtml(i18n.localized(project.category))}</span><span>${escapeHtml(i18n.text("common.published"))}</span></div>
@@ -29,6 +32,17 @@
         </a>
       </article>`;
     }).join("");
+    if (!reducedMotion.matches && !coarsePointer.matches) {
+      grid.querySelectorAll(".project-preview").forEach((previewVideo) => {
+        const card = previewVideo.closest(".project-card");
+        const play = () => previewVideo.play().catch(() => {});
+        const pause = () => previewVideo.pause();
+        card.addEventListener("mouseenter", play);
+        card.addEventListener("mouseleave", pause);
+        card.addEventListener("focusin", play);
+        card.addEventListener("focusout", pause);
+      });
+    }
   }
 
   document.addEventListener("DOMContentLoaded", renderProjects);
