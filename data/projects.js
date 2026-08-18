@@ -131,6 +131,70 @@ window.PORTFOLIO_PROJECTS = [
     }
   },
   {
+    id: "serva-me",
+    status: "published",
+    category: { ja: "学生制作 / リリース作品", en: "Academic / Released Project", ko: "졸업작품 / 출시 작품", zh: "学生制作 / 已发行作品" },
+    title: "SERVA ME",
+    shortLabel: "SERVA / ME",
+    summary: {
+      ja: "卒業制作として開発し、BIC 2023で展示、STOVEで無料リリースしたソウルライクアクションゲーム。",
+      en: "A soulslike action game developed as a graduation project, exhibited at BIC 2023 and released for free on STOVE.",
+      ko: "졸업작품으로 개발해 BIC 2023에 선정·전시하고 스토브에 무료 출시한 소울라이크 액션 게임.",
+      zh: "作为毕业作品开发、入选并参加BIC 2023展出，并在STOVE免费发行的类魂动作游戏。"
+    },
+    technologies: ["Unreal Engine 4 → 5", "Character Rigging", "Gameplay Animation", "Optimization"],
+    detailPage: "projects/serva-me.html",
+    visualType: "production",
+    thumbnail: "https://i.ytimg.com/vi/C5DbwWPLnKc/maxresdefault.jpg",
+    thumbnailAlt: {
+      ja: "SERVA MEのYouTubeトレーラーサムネイル",
+      en: "YouTube trailer thumbnail for SERVA ME",
+      ko: "SERVA ME YouTube 트레일러 썸네일",
+      zh: "SERVA ME YouTube预告片缩略图"
+    },
+    externalUrl: "https://www.youtube.com/watch?v=C5DbwWPLnKc",
+    storeUrl: "https://store.onstove.com/ko/games/2651",
+    videoTitle: {
+      ja: "SERVA ME 公式映像",
+      en: "SERVA ME Official Video",
+      ko: "SERVA ME 공식 영상",
+      zh: "SERVA ME 官方视频"
+    },
+    sections: {
+      overview: {
+        ja: "청강文化産業大学ゲームコンテンツ専攻の3年次卒業制作として開発したソウルライクアクションゲームです。BIC 2023に選定・展示され、STOVEで無料リリースしました。チームではPM、リガー、アニメーションパートリーダーを担当しました。",
+        en: "A soulslike action game developed as a third-year graduation project at Chungkang College of Cultural Industries. It was selected for and exhibited at BIC 2023, then released for free on STOVE. I served as PM, rigger and animation lead.",
+        ko: "청강문화산업대학교 게임콘텐츠스쿨 3학년 졸업작품으로 개발한 소울라이크 액션 게임입니다. BIC 2023에 선정되어 전시를 진행했고, 스토브에 무료 출시했습니다. 팀에서는 PM, 리거, 애니메이션 파트장을 맡았습니다.",
+        zh: "这是我在Chungkang College of Cultural Industries游戏内容专业三年级开发的毕业作品，一款类魂动作游戏。作品入选并参加了BIC 2023展出，之后在STOVE免费发行。我担任PM、绑定美术与动画负责人。"
+      },
+      problem: {
+        ja: "UE4で開発を開始し、制作が進むにつれてNaniteとLumenの必要性が明確になったためUE5へのアップグレードを進めました。初めて3Dゲーム制作に取り組む企画メンバーと、ゲームシステムの設計・実装方法をすり合わせることも重要な課題でした。",
+        en: "Development started in UE4, but the project needed Nanite and Lumen as production progressed, so we planned and executed an upgrade to UE5. Aligning game-system design and implementation with a team new to 3D game development was another major challenge.",
+        ko: "UE4로 개발을 시작했지만 제작이 진행되면서 Nanite와 Lumen의 필요성이 커져 UE5 업그레이드를 진행했습니다. 3D 게임 개발이 처음인 기획 파트와 시스템 설계 및 구현 방법을 맞춰가는 과정도 중요한 과제였습니다.",
+        zh: "项目最初使用UE4开发，随着制作推进逐渐需要Nanite与Lumen，因此推进了UE5升级。与首次进行3D游戏开发的策划成员共同确定系统设计与实现方式，也是重要挑战。"
+      },
+      solution: {
+        ja: "キャラクターリギング、プレイヤーのインゲームモーション、演出アニメーションを中心に担当し、モンスターの企画・モーション制作にも参加しました。インゲームライティング、最適化、ルートボーン、プレイヤーコンポーネント、カプセル、ステートマシンなどの技術課題にも対応しました。",
+        en: "I led character rigging, player gameplay motion and cinematic animation, while also contributing to monster design and motion. I helped solve technical issues involving in-game lighting, optimization, root bones, player components, collision capsules and state machines.",
+        ko: "캐릭터 리깅, 플레이어 인게임 모션과 연출 애니메이션을 중심으로 담당하고 몬스터 기획과 모션 제작에도 참여했습니다. 인게임 라이팅, 최적화, 루트 본, 플레이어 컴포넌트, 캡슐, 스테이트 머신 관련 기술 이슈에도 대응했습니다.",
+        zh: "我主要负责角色绑定、玩家游戏内动作与演出动画，也参与了怪物设计与动作制作，并协助处理游戏内灯光、优化、根骨骼、玩家组件、碰撞胶囊与状态机等技术问题。"
+      },
+      technical: ["Unreal Engine 4 → 5 Upgrade", "Character Rigging", "Gameplay Animation", "Cinematic Animation", "Root Bone / State Machine", "Lighting / Optimization"],
+      result: {
+        ja: "チーム制作を通じてゲームシステムの設計と実装への理解を深め、キャラクター制作からエンジン上の調整まで一貫して担当しました。BIC 2023での展示とSTOVEでの無料リリースまで完成させた作品です。",
+        en: "The project deepened my understanding of game-system design and implementation, while letting me own the workflow from character creation through engine-side iteration. It was completed through BIC 2023 exhibition and a free STOVE release.",
+        ko: "팀 제작을 통해 게임 시스템의 설계와 구현에 대한 이해를 넓혔고, 캐릭터 제작부터 엔진 내 조정까지 일관되게 담당했습니다. BIC 2023 전시와 스토브 무료 출시까지 완성한 작품입니다.",
+        zh: "通过团队制作，我加深了对游戏系统设计与实现的理解，并负责从角色制作到引擎内调试的完整流程。作品最终完成了BIC 2023展出并在STOVE免费发行。"
+      },
+      learned: {
+        ja: "UE4/UE5の運用、ROOTボーンとプレイヤーコンポーネントの制御、インゲームアニメーション制作、複数職種で進める制作パイプラインについて実践的に学びました。",
+        en: "I gained practical experience with UE4/UE5 production, root-bone and player-component control, gameplay animation authoring and pipeline design across disciplines.",
+        ko: "UE4·UE5 운용, 루트 본과 플레이어 컴포넌트 제어, 인게임 애니메이션 제작, 여러 직군이 함께 진행하는 제작 파이프라인을 실무적으로 배웠습니다.",
+        zh: "我实践学习了UE4/UE5制作、根骨骼与玩家组件控制、游戏内动画制作，以及跨职能团队的制作管线设计。"
+      }
+    }
+  },
+  {
     id: "variable-fk",
     status: "planned",
     category: { ja: "リギングシステム / ツール開発", en: "Rigging System / Tool Development" },
