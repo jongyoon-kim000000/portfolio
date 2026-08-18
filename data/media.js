@@ -31,22 +31,10 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "MaxScript", "Variable FK", "R&D"]
   },
   {
-    id: "HmAW_aGHH4s", category: "maya", featured: true, status: "private",
-    title: "Multi-DCC Workflow Support Case",
-    summary: { ja: "Maya、3ds Max、MotionBuilderを横断して制作環境を支援したMulti-DCC事例。", en: "A multi-DCC workflow support case spanning Maya, 3ds Max and MotionBuilder.", ko: "Maya, 3ds Max와 MotionBuilder를 연결해 제작 환경을 지원한 다중 DCC 사례입니다.", zh: "横跨Maya、3ds Max与MotionBuilder的多DCC工作流支持案例。" },
-    tags: ["Maya", "3ds Max", "MotionBuilder", "Multi-DCC"]
-  },
-  {
     id: "yN-nqG9nZ9o", category: "maya",
     title: "MetaHuman to Maya Import",
     summary: { ja: "MetaHumanアセットをMayaへ移行するキャラクターワークフローの検証。", en: "A character-workflow study for bringing MetaHuman assets into Maya.", ko: "MetaHuman 에셋을 Maya로 가져오는 캐릭터 워크플로 연구입니다.", zh: "将MetaHuman资产导入Maya的角色工作流研究。" },
     tags: ["Maya", "MetaHuman", "Character Workflow"]
-  },
-  {
-    id: "FCyhUFKE9VA", category: "ue5", featured: true, status: "private",
-    title: "Unreal Engine Character Setup Portfolio",
-    summary: { ja: "Unreal Engineでのキャラクターセットアップ経験をまとめたポートフォリオ映像。", en: "A portfolio video focused on my Unreal Engine character-setup work.", ko: "Unreal Engine 캐릭터 세팅 경험을 정리한 포트폴리오 영상입니다.", zh: "集中展示我的Unreal Engine角色设置经验的作品视频。" },
-    tags: ["Unreal Engine", "Character Setup", "Technical Animation"]
   },
   {
     id: "ePrgRWvxt18", category: "ue5",
