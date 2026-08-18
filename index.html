@@ -42,11 +42,32 @@
         <span></span><span></span>
       </button>
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a href="work.html" data-i18n="nav.work">Work</a>
-        <a href="#production" data-i18n="nav.production">Production</a>
-        <a href="#growth" data-i18n="nav.growth">Growth</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#about" data-i18n="nav.about">About</a>
+        <div class="nav-item">
+          <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+          <div class="nav-sub">
+            <a href="#work" data-i18n="work.title">主要作品</a>
+            <a href="#production" data-i18n="nav.production">Production</a>
+            <a href="#growth" data-i18n="nav.growth">Growth</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="work.html" data-i18n="nav.work">Work</a>
+          <div class="nav-sub">
+            <a href="work.html" data-i18n="work.libraryCta">DCC Media Library</a>
+            <a href="work.html?tool=max" data-i18n="media.category.max">3ds Max</a>
+            <a href="work.html?tool=maya" data-i18n="media.category.maya">Maya</a>
+            <a href="work.html?tool=motionbuilder" data-i18n="media.category.motionbuilder">MotionBuilder</a>
+            <a href="work.html?tool=ue5" data-i18n="media.category.ue5">Unreal Engine 5</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="projects/project-tal.html" data-i18n="nav.projects">Projects</a>
+          <div class="nav-sub">
+            <a href="projects/project-tal.html" data-i18n="media.projectTal">Project TAL</a>
+          </div>
+        </div>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="language-switch" aria-label="Language">
@@ -94,7 +115,7 @@
     <section id="work" class="section shell">
       <div class="section-heading">
         <p class="section-index">01 / SELECTED WORK</p>
-        <div><h2 data-i18n="work.title">主要作品</h2><p data-i18n="work.intro">リギング、ツール、リアルタイム実装をつなぐ仕事。</p><a class="button button-ghost work-library-cta" href="work.html"><span data-i18n="work.libraryCta">DCC Media Library</span><span aria-hidden="true">↗</span></a></div>
+        <div><h2 data-i18n="work.title">主要作品</h2><p data-i18n="work.intro">リギング、ツール、リアルタイム実装をつなぐ仕事。</p><a class="text-link work-library-cta" href="work.html"><span data-i18n="work.libraryCta">DCC Media Library</span> <span aria-hidden="true">↗</span></a></div>
       </div>
       <div id="project-grid" class="project-grid" aria-live="polite"></div>
     </section>

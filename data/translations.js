@@ -1,7 +1,7 @@
 /* Shared interface copy for Japanese, English, Korean and Simplified Chinese. */
 window.PORTFOLIO_TRANSLATIONS = {
   ja: {
-    "accessibility.skip":"コンテンツへ移動","nav.menu":"メニュー","nav.work":"Work","nav.production":"Production","nav.growth":"Growth","nav.skills":"Skills","nav.about":"About","nav.contact":"Contact",
+    "accessibility.skip":"コンテンツへ移動","nav.menu":"メニュー","nav.work":"Work","nav.projects":"Projects","nav.production":"Production","nav.growth":"Growth","nav.skills":"Skills","nav.about":"About","nav.contact":"Contact",
     "hero.availability":"Suwon, South Korea","hero.summary":"コンシューマーゲーム開発におけるキャラクターリギング、アニメーションパイプライン、DCCツール開発、Unreal Engineでのキャラクター実装を中心に活動しています。","hero.workCta":"選考作品を見る","hero.channelCta":"YouTube チャンネル",
     "quick.current":"Current","quick.focus":"Focus","quick.tools":"Production Tools","quick.development":"Development",
     "work.title":"選考作品","work.intro":"リギング、ツール、リアルタイム実装をつなぐ仕事。","production.title":"プロダクション経験","production.intro":"コンソールゲーム制作におけるリギングからエンジン実装まで。","growth.title":"成長の軌跡","growth.intro":"学びをプロダクションへつなげてきた継続的なプロセス。","skills.title":"技術領域","skills.intro":"実務経験と現在の学習領域を明確に区分しています。",
@@ -10,7 +10,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     "nav.home":"Home","work.libraryCta":"DCC Media Library →","media.projectTal":"Project TAL","media.title":"DCC & リアルタイム技術記録","media.intro":"リギング、自動化、リアルタイムキャラクターワークフローを短い映像で記録しています。","media.note":"DCCが変わっても、階層、Constraint、Matrix、自動化、アーティスト向けツール設計の経験は応用できます。","media.filterTitle":"ツール別に映像を絞り込む","media.category.all":"All","media.category.max":"3ds Max","media.category.maya":"Maya","media.category.motionbuilder":"MotionBuilder","media.category.ue5":"Unreal Engine 5","media.categoryHint.all":"全ての映像","media.categoryHint.max":"Rigging & Tools","media.categoryHint.maya":"Multi-DCC Workflow","media.categoryHint.motionbuilder":"Animation Workflow","media.categoryHint.ue5":"Real-Time Character","media.play":"映像を再生","media.youtube":"YouTubeで見る","media.empty":"公開できるMotionBuilder映像を準備後に追加します。","media.featured":"Featured"
   },
   en: {
-    "accessibility.skip":"Skip to content","nav.menu":"Menu","nav.work":"Work","nav.production":"Production","nav.growth":"Growth","nav.skills":"Skills","nav.about":"About","nav.contact":"Contact",
+    "accessibility.skip":"Skip to content","nav.menu":"Menu","nav.work":"Work","nav.projects":"Projects","nav.production":"Production","nav.growth":"Growth","nav.skills":"Skills","nav.about":"About","nav.contact":"Contact",
     "hero.availability":"Suwon, South Korea","hero.summary":"I work across character rigging, animation pipelines, DCC tool development and in-engine character implementation for console game production.","hero.workCta":"View Selected Work","hero.channelCta":"YouTube Channel",
     "quick.current":"Current","quick.focus":"Focus","quick.tools":"Production Tools","quick.development":"Development",
     "work.title":"Selected Work","work.intro":"Work connecting rigging, tools and real-time implementation.","production.title":"Production Experience","production.intro":"From character rigging to in-engine implementation for console game production.","growth.title":"Growth","growth.intro":"A continuous process of turning learning into production capability.","skills.title":"Technical Areas","skills.intro":"Production experience and current learning areas are clearly separated.",
@@ -19,7 +19,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     "nav.home":"Home","work.libraryCta":"DCC Media Library →","media.projectTal":"Project TAL","media.title":"DCC & REAL-TIME STUDIES","media.intro":"Short technical studies documenting rigging, automation and real-time character workflows.","media.note":"The DCC may change; hierarchy, constraints, matrices, automation and artist-facing tool design remain transferable.","media.filterTitle":"Filter videos by tool","media.category.all":"All","media.category.max":"3ds Max","media.category.maya":"Maya","media.category.motionbuilder":"MotionBuilder","media.category.ue5":"Unreal Engine 5","media.categoryHint.all":"All Videos","media.categoryHint.max":"Rigging & Tools","media.categoryHint.maya":"Multi-DCC Workflow","media.categoryHint.motionbuilder":"Animation Workflow","media.categoryHint.ue5":"Real-Time Character","media.play":"Play video","media.youtube":"Watch on YouTube","media.empty":"A public MotionBuilder video will be added when the source is ready.","media.featured":"Featured"
   },
   ko: {
-    "accessibility.skip":"본문으로 이동","nav.menu":"메뉴","nav.work":"작업","nav.production":"프로덕션","nav.growth":"성장","nav.skills":"기술","nav.about":"소개","nav.contact":"연락",
+    "accessibility.skip":"본문으로 이동","nav.menu":"메뉴","nav.work":"작업","nav.projects":"프로젝트","nav.production":"프로덕션","nav.growth":"성장","nav.skills":"기술","nav.about":"소개","nav.contact":"연락",
     "hero.availability":"대한민국 수원","hero.summary":"콘솔 게임 제작에서 캐릭터 리깅, 애니메이션 파이프라인, DCC 도구 개발과 Unreal Engine 캐릭터 구현을 중심으로 일하고 있습니다.","hero.workCta":"주요 작업 보기","hero.channelCta":"YouTube 채널",
     "quick.current":"현재","quick.focus":"전문 분야","quick.tools":"프로덕션 도구","quick.development":"개발",
     "work.title":"주요 작업","work.intro":"리깅, 도구와 실시간 구현을 연결하는 작업입니다.","production.title":"프로덕션 경험","production.intro":"콘솔 게임 제작의 캐릭터 리깅부터 엔진 구현까지 담당합니다.","growth.title":"성장 과정","growth.intro":"학습을 실제 제작 역량으로 연결해 온 과정입니다.","skills.title":"기술 영역","skills.intro":"실무 경험과 현재 학습 중인 영역을 명확하게 구분했습니다.",
@@ -28,7 +28,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     "nav.home":"홈","work.libraryCta":"DCC 영상 라이브러리 →","media.projectTal":"Project TAL","media.title":"DCC & 실시간 기술 기록","media.intro":"리깅, 자동화와 실시간 캐릭터 워크플로를 짧은 영상으로 기록합니다.","media.note":"DCC가 달라져도 계층 구조, Constraint, Matrix, 자동화와 아티스트용 도구 설계 경험은 이어집니다.","media.filterTitle":"도구별 영상 필터","media.category.all":"전체","media.category.max":"3ds Max","media.category.maya":"Maya","media.category.motionbuilder":"MotionBuilder","media.category.ue5":"Unreal Engine 5","media.categoryHint.all":"전체 영상","media.categoryHint.max":"리깅 & 도구","media.categoryHint.maya":"다중 DCC 워크플로","media.categoryHint.motionbuilder":"애니메이션 워크플로","media.categoryHint.ue5":"실시간 캐릭터","media.play":"영상 재생","media.youtube":"YouTube에서 보기","media.empty":"공개 가능한 MotionBuilder 영상이 준비되면 추가합니다.","media.featured":"대표 영상"
   },
   zh: {
-    "accessibility.skip":"跳转到正文","nav.menu":"菜单","nav.work":"作品","nav.production":"项目经验","nav.growth":"成长","nav.skills":"技能","nav.about":"关于","nav.contact":"联系",
+    "accessibility.skip":"跳转到正文","nav.menu":"菜单","nav.work":"作品","nav.projects":"项目","nav.production":"项目经验","nav.growth":"成长","nav.skills":"技能","nav.about":"关于","nav.contact":"联系",
     "hero.availability":"韩国水原","hero.summary":"我主要从事主机游戏开发中的角色绑定、动画管线、DCC工具开发以及Unreal Engine角色实现。","hero.workCta":"查看精选作品","hero.channelCta":"YouTube 频道",
     "quick.current":"目前","quick.focus":"专业方向","quick.tools":"制作工具","quick.development":"开发",
     "work.title":"精选作品","work.intro":"连接角色绑定、工具与实时实现的技术工作。","production.title":"项目制作经验","production.intro":"从主机游戏角色绑定到引擎内实现。","growth.title":"成长轨迹","growth.intro":"持续将学习转化为实际制作能力。","skills.title":"技术领域","skills.intro":"明确区分实际项目经验与当前学习领域。",

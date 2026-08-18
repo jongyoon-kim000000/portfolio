@@ -38,7 +38,8 @@
   75%, 77% { translate: 0 0; filter: none; }
   76% { translate: -2px -1px; filter: brightness(1.28) drop-shadow(2px 0 rgba(189,61,69,.65)); }
 }
-.work-library-cta { min-width: min(100%, 330px); margin-top: 28px; border-color: #434952; background: linear-gradient(110deg, rgba(255,255,255,.035), transparent); }
+.work-library-cta { margin-top: 24px; color: var(--muted); }
+.work-library-cta:hover { color: var(--text); }
 
 .project-card > a:focus-visible { outline: 0; box-shadow: inset 0 0 0 2px var(--accent); }
 .button:focus-visible::before { left: 120%; }
@@ -59,8 +60,10 @@
 #growth .timeline::after { content: ""; position: absolute; z-index: 0; left: 0; top: 7px; width: 100%; height: 1px; transform: scaleX(var(--timeline-progress, 0)); transform-origin: left center; background: linear-gradient(90deg, var(--accent), #e8edf2 74%, rgba(232,237,242,.14)); box-shadow: 0 0 14px rgba(189,61,69,.75); transition: transform .12s linear; }
 #growth .timeline-item { position: relative; z-index: 1; }
 
-/* Prevent awkward Korean word splits while keeping the About heading punchy. */
-#about .section-heading-stacked h2 { max-width: 550px; font-size: clamp(42px, 3.8vw, 58px); line-height: 1.02; word-break: keep-all; overflow-wrap: normal; }
+/* Keep the About heading punchy. keep-all is Korean-only: Japanese has no
+   spaces, so keep-all there forces the whole heading onto one overflowing line. */
+#about .section-heading-stacked h2 { max-width: 550px; font-size: clamp(42px, 3.8vw, 58px); line-height: 1.15; }
+#about .section-heading-stacked h2:lang(ko) { word-break: keep-all; overflow-wrap: normal; }
 
 /* Card depth is deliberately reserved for direct interaction. */
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
@@ -78,7 +81,6 @@
   .hero-intro { padding-right: 0; }
   .language-switch { gap: 2px; }
   .language-switch button { min-width: 29px; min-height: 40px; padding-inline: 2px; }
-  .work-library-cta { width: 100%; }
   #growth.section { padding-block: 72px 64px; }
   #growth .section-heading { margin-bottom: 34px; }
   #about .section-heading-stacked h2 { max-width: 100%; font-size: clamp(40px, 11.2vw, 50px); }

@@ -34,7 +34,7 @@
 .media-empty { grid-column: 1/-1; padding: 72px 30px; border: 1px solid var(--border); text-align: center; }
 .media-empty strong { font-size: 22px; }
 .media-empty p { margin-top: 10px; color: var(--muted); font-size: 12px; }
-@media (max-width: 900px) { .media-nav { display: none; } .media-hero-copy { margin-left: 0; } .media-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .media-hero-copy { margin-left: 0; } .media-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: no-preference) {
   .media-card { animation: media-card-enter .46s var(--ease) both; animation-delay: calc(var(--card-order, 0) * 55ms); }
   @keyframes media-card-enter { from { opacity: 0; transform: translate3d(20px, 7px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
@@ -44,7 +44,6 @@
 .media-custom-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;color:#f4f5f6;text-align:center;background:radial-gradient(circle at 86% 10%,rgba(189,61,69,.12),transparent 30%),#050607;transition:filter .35s}
 .media-custom-cover::before,.media-custom-cover::after{content:"";position:absolute;width:18px;height:18px;border-color:rgba(255,255,255,.2)}.media-custom-cover::before{left:22px;top:22px;border-left:1px solid;border-top:1px solid}.media-custom-cover::after{right:22px;bottom:22px;border-right:1px solid;border-bottom:1px solid}
 .media-custom-cover span,.media-custom-cover strong{position:relative;z-index:1}.cover-kicker{color:#8e949d;font-size:8px;font-weight:800;letter-spacing:.16em}.media-custom-cover strong{margin-top:20px;font-size:clamp(30px,4.4vw,58px);font-weight:350;letter-spacing:-.045em;line-height:1.02}.cover-meta{margin-top:16px;color:#aeb3bb;font-size:clamp(11px,1.4vw,17px);font-weight:350;letter-spacing:.08em}.media-play:hover .media-custom-cover{filter:brightness(.78)}
-@media(max-width:900px){.media-nav.is-open{display:flex}}
 
 /* Hover video preview: rendered only when a media entry declares a preview field */
 .media-preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; pointer-events: none; }
