@@ -47,12 +47,12 @@ window.PORTFOLIO_PROFILE = {
     { name: "Animation Pipeline", detail: { ja: "構築・保守・技術支援", en: "Development, maintenance & support", ko: "구축·유지보수·기술 지원", zh: "构建、维护与技术支持" }, status: "production" },
     { name: "Python", detail: { ja: "プロダクション自動化", en: "Production automation", ko: "프로덕션 자동화", zh: "制作流程自动化" }, status: "working" },
     { name: "MotionBuilder", detail: { ja: "制作ワークフロー", en: "Production workflow", ko: "제작 워크플로", zh: "制作工作流" }, status: "working" },
-    { name: "Control Rig", detail: { ja: "実務経験", en: "Production experience", ko: "실무 경험", zh: "项目经验" }, status: "working" },
+    { name: "Control Rig", detail: { ja: "UE5での実務経験", en: "Production experience in UE5", ko: "UE5 실무 경험", zh: "UE5项目经验" }, status: "working" },
     { name: "Animation Blueprint", detail: { ja: "実務経験", en: "Production experience", ko: "실무 경험", zh: "项目经验" }, status: "working" },
     { name: "Maya", detail: { ja: "リギング・スキニング", en: "Rigging & skinning", ko: "리깅·스키닝", zh: "绑定与蒙皮" }, status: "learning" },
     { name: "mGear", detail: { ja: "モジュラーリグ", en: "Modular rig architecture", ko: "모듈형 리그", zh: "模块化绑定架构" }, status: "learning" },
     { name: "Maya Python", detail: { ja: "リグ自動化", en: "Rig automation", ko: "리그 자동화", zh: "绑定自动化" }, status: "learning" },
-    { name: "UE Control Rig", detail: { ja: "FullBody IK・プロシージャルリギング", en: "FullBody IK & procedural rigging", ko: "FullBody IK·프로시저럴 리깅", zh: "FullBody IK与程序化绑定" }, status: "learning" }
+    { name: "Advanced Control Rig", detail: { ja: "FullBody IK・プロシージャルリギング", en: "FullBody IK & procedural rigging", ko: "FullBody IK·프로시저럴 리깅", zh: "FullBody IK与程序化绑定" }, status: "learning" }
   ],
   community: {
     visible: false,
