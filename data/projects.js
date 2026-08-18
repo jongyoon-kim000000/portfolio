@@ -145,12 +145,12 @@ window.PORTFOLIO_PROJECTS = [
     technologies: ["Unreal Engine 4 → 5", "Character Rigging", "Gameplay Animation", "Optimization"],
     detailPage: "projects/serva-me.html",
     visualType: "production",
-    thumbnail: "https://i.ytimg.com/vi/C5DbwWPLnKc/maxresdefault.jpg",
+    thumbnail: "assets/serva-me-thumbnail.png",
     thumbnailAlt: {
-      ja: "SERVA MEのYouTubeトレーラーサムネイル",
-      en: "YouTube trailer thumbnail for SERVA ME",
-      ko: "SERVA ME YouTube 트레일러 썸네일",
-      zh: "SERVA ME YouTube预告片缩略图"
+      ja: "SERVA MEのキャラクターサムネイル",
+      en: "Character thumbnail for SERVA ME",
+      ko: "SERVA ME 캐릭터 썸네일",
+      zh: "SERVA ME角色缩略图"
     },
     externalUrl: "https://www.youtube.com/watch?v=C5DbwWPLnKc",
     storeUrl: "https://store.onstove.com/ko/games/2651",
