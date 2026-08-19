@@ -19,6 +19,13 @@ window.PORTFOLIO_PROFILE = {
       }
     },
     {
+      title: { ja: "リギングツールと自動化", en: "Rigging Tools / Automation", ko: "리깅 도구 / 자동화", zh: "绑定工具 / 自动化" },
+      description: {
+        ja: "MaxScriptとPythonによる反復作業の自動化、制作ボトルネックとセットアップ工程の改善。",
+        en: "MaxScript and Python automation for repetitive rigging work, bottlenecks and setup workflows.", ko: "MaxScript와 Python으로 리깅 반복 작업과 세팅 공정의 병목을 개선.", zh: "使用MaxScript与Python自动化绑定重复工作，改善制作瓶颈与设置流程。"
+      }
+    },
+    {
       title: { ja: "アニメーションパイプライン", en: "Animation Pipeline", ko: "애니메이션 파이프라인", zh: "动画管线" },
       description: {
         ja: "制作パイプラインの構築・保守、RigとAnimation Asset間の技術課題への対応。",
@@ -31,28 +38,27 @@ window.PORTFOLIO_PROFILE = {
         ja: "IK Retargeting、Control Rig、Animation Blueprint、Secondary Animationを含むキャラクター実装。",
         en: "Character implementation including IK Retargeting, Control Rig, Animation Blueprint and secondary animation.", ko: "IK Retargeting, Control Rig, Animation Blueprint와 세컨더리 애니메이션을 포함한 캐릭터 구현.", zh: "包括IK Retargeting、Control Rig、Animation Blueprint与次级动画的角色实现。"
       }
-    },
-    {
-      title: { ja: "ツールと技術課題対応", en: "Tools & Troubleshooting", ko: "도구와 기술 문제 대응", zh: "工具与技术问题处理" },
-      description: {
-        ja: "MaxScriptとPythonによる反復作業の自動化、制作ボトルネックとエンジン統合課題の改善。",
-        en: "MaxScript and Python automation for repetitive work, production bottlenecks and engine-integration issues.", ko: "MaxScript와 Python으로 반복 작업을 자동화하고 제작 병목과 엔진 연동 문제를 개선.", zh: "使用MaxScript与Python自动化重复工作，改善制作瓶颈与引擎集成问题。"
-      }
     }
   ],
   skills: [
-    { name: "3ds Max", detail: { ja: "キャラクターリギング", en: "Character rigging", ko: "캐릭터 리깅", zh: "角色绑定" }, status: "production" },
-    { name: "MaxScript", detail: { ja: "ツール開発・自動化", en: "Tool development & automation", ko: "도구 개발·자동화", zh: "工具开发与自动化" }, status: "production" },
-    { name: "Unreal Engine 5", detail: { ja: "キャラクター実装", en: "Character implementation", ko: "캐릭터 구현", zh: "角色实现" }, status: "production" },
+    { name: "Character Rigging", detail: { ja: "キャラクターリギング", en: "Character rigging", ko: "캐릭터 리깅", zh: "角色绑定" }, status: "production" },
+    { name: "3ds Max", detail: { ja: "リギング制作環境", en: "Primary rigging DCC", ko: "주력 리깅 DCC", zh: "主要绑定DCC" }, status: "production" },
+    { name: "MaxScript", detail: { ja: "リギングツール・自動化", en: "Rigging tools & automation", ko: "리깅 도구·자동화", zh: "绑定工具与自动化" }, status: "production" },
     { name: "Animation Pipeline", detail: { ja: "構築・保守・技術支援", en: "Development, maintenance & support", ko: "구축·유지보수·기술 지원", zh: "构建、维护与技术支持" }, status: "production" },
-    { name: "Python", detail: { ja: "プロダクション自動化", en: "Production automation", ko: "프로덕션 자동화", zh: "制作流程自动化" }, status: "working" },
-    { name: "MotionBuilder", detail: { ja: "制作ワークフロー", en: "Production workflow", ko: "제작 워크플로", zh: "制作工作流" }, status: "working" },
-    { name: "Control Rig", detail: { ja: "UE5での実務経験", en: "Production experience in UE5", ko: "UE5 실무 경험", zh: "UE5项目经验" }, status: "working" },
-    { name: "Animation Blueprint", detail: { ja: "実務経験", en: "Production experience", ko: "실무 경험", zh: "项目经验" }, status: "working" },
+    { name: "Unreal Engine 5", detail: { ja: "キャラクター実装", en: "Character implementation", ko: "캐릭터 구현", zh: "角色实现" }, status: "production" },
+    { name: "IK Retargeting", detail: { ja: "アニメーション実装", en: "Animation implementation", ko: "애니메이션 구현", zh: "动画实现" }, status: "production" },
+    { name: "Control Rig", detail: { ja: "UE5キャラクターリグ", en: "UE5 character rigging", ko: "UE5 캐릭터 리깅", zh: "UE5角色绑定" }, status: "production" },
+    { name: "Animation Blueprint", detail: { ja: "キャラクターアニメーション実装", en: "Character animation implementation", ko: "캐릭터 애니메이션 구현", zh: "角色动画实现" }, status: "production" },
+    { name: "Rigid Body", detail: { ja: "セカンダリアニメーション", en: "Secondary animation", ko: "세컨더리 애니메이션", zh: "次级动画" }, status: "production" },
+    { name: "RBF Solver", detail: { ja: "リグ・アニメーション技術", en: "Rigging & animation systems", ko: "리깅·애니메이션 시스템", zh: "绑定与动画系统" }, status: "production" },
+    { name: "Chaos Cloth", detail: { ja: "UE5物理・クロス", en: "UE5 physics & cloth", ko: "UE5 물리·클로스", zh: "UE5物理与布料" }, status: "production" },
+    { name: "Python", detail: { ja: "制作自動化", en: "Production automation", ko: "프로덕션 자동화", zh: "制作流程自动化" }, status: "working" },
+    { name: "MotionBuilder", detail: { ja: "アニメーションワークフロー", en: "Animation workflow", ko: "애니메이션 워크플로", zh: "动画工作流" }, status: "working" },
+    { name: "Technical Animation", detail: { ja: "リギングと実装の接続", en: "Bridging rigging and implementation", ko: "리깅과 구현 연결", zh: "连接绑定与实现" }, status: "working" },
     { name: "Maya", detail: { ja: "リギング・スキニング", en: "Rigging & skinning", ko: "리깅·스키닝", zh: "绑定与蒙皮" }, status: "learning" },
-    { name: "mGear", detail: { ja: "モジュラーリグ", en: "Modular rig architecture", ko: "모듈형 리그", zh: "模块化绑定架构" }, status: "learning" },
     { name: "Maya Python", detail: { ja: "リグ自動化", en: "Rig automation", ko: "리그 자동화", zh: "绑定自动化" }, status: "learning" },
-    { name: "Advanced Control Rig", detail: { ja: "FullBody IK・プロシージャルリギング", en: "FullBody IK & procedural rigging", ko: "FullBody IK·프로시저럴 리깅", zh: "FullBody IK与程序化绑定" }, status: "learning" }
+    { name: "mGear", detail: { ja: "モジュラーリグ", en: "Modular rig architecture", ko: "모듈형 리그", zh: "模块化绑定架构" }, status: "learning" },
+    { name: "Deformation / Anatomy", detail: { ja: "変形と身体構造", en: "Deformation & anatomy", ko: "변형과 해부학", zh: "变形与人体结构" }, status: "learning" }
   ],
   community: {
     visible: false,
