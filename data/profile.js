@@ -47,10 +47,10 @@ window.PORTFOLIO_PROFILE = {
     { name: "Animation Pipeline", detail: { ja: "構築・保守・技術支援", en: "Development, maintenance & support", ko: "구축·유지보수·기술 지원", zh: "构建、维护与技术支持" }, status: "production" },
     { name: "Unreal Engine 5", detail: { ja: "キャラクター実装", en: "Character implementation", ko: "캐릭터 구현", zh: "角色实现" }, status: "production" },
     { name: "IK Retargeting", detail: { ja: "アニメーション実装", en: "Animation implementation", ko: "애니메이션 구현", zh: "动画实现" }, status: "production" },
-    { name: "Control Rig", detail: { ja: "UE5キャラクターリグ", en: "UE5 character rigging", ko: "UE5 캐릭터 리깅", zh: "UE5角色绑定" }, status: "production" },
+    { name: "Control Rig", detail: { ja: "UE5キャラクターリグ", en: "UE5 character rigging", ko: "UE5 캐릭터 리깅", zh: "UE5角色绑定" }, status: "working" },
     { name: "Animation Blueprint", detail: { ja: "キャラクターアニメーション実装", en: "Character animation implementation", ko: "캐릭터 애니메이션 구현", zh: "角色动画实现" }, status: "production" },
     { name: "Rigid Body", detail: { ja: "セカンダリアニメーション", en: "Secondary animation", ko: "세컨더리 애니메이션", zh: "次级动画" }, status: "production" },
-    { name: "RBF Solver", detail: { ja: "リグ・アニメーション技術", en: "Rigging & animation systems", ko: "리깅·애니메이션 시스템", zh: "绑定与动画系统" }, status: "production" },
+    { name: "RBF Solver", detail: { ja: "リグ・アニメーション技術", en: "Rigging & animation systems", ko: "리깅·애니메이션 시스템", zh: "绑定与动画系统" }, status: "working" },
     { name: "Chaos Cloth", detail: { ja: "UE5物理・クロス", en: "UE5 physics & cloth", ko: "UE5 물리·클로스", zh: "UE5物理与布料" }, status: "production" },
     { name: "Python", detail: { ja: "制作自動化", en: "Production automation", ko: "프로덕션 자동화", zh: "制作流程自动化" }, status: "working" },
     { name: "MotionBuilder", detail: { ja: "アニメーションワークフロー", en: "Animation workflow", ko: "애니메이션 워크플로", zh: "动画工作流" }, status: "working" },
@@ -58,7 +58,6 @@ window.PORTFOLIO_PROFILE = {
     { name: "Maya", detail: { ja: "リギング・スキニング", en: "Rigging & skinning", ko: "리깅·스키닝", zh: "绑定与蒙皮" }, status: "learning" },
     { name: "Maya Python", detail: { ja: "リグ自動化", en: "Rig automation", ko: "리그 자동화", zh: "绑定自动化" }, status: "learning" },
     { name: "mGear", detail: { ja: "モジュラーリグ", en: "Modular rig architecture", ko: "모듈형 리그", zh: "模块化绑定架构" }, status: "learning" },
-    { name: "Deformation / Anatomy", detail: { ja: "変形と身体構造", en: "Deformation & anatomy", ko: "변형과 해부학", zh: "变形与人体结构" }, status: "learning" }
   ],
   community: {
     visible: false,
