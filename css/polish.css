@@ -1,5 +1,8 @@
 :root { --faint: #7d848e; }
 
+/* The credentials block is intentionally parked until more qualifications are ready. */
+.credentials[hidden] { display: none !important; }
+
 .brand-mark {
   position: relative;
   display: flex;
