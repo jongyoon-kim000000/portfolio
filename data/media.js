@@ -37,6 +37,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["Maya", "MetaHuman", "Character Workflow"]
   },
   {
+    id: "ki6tiE4IKZ0", category: "ue5",
+    title: "UE5 Procedural Skirt Animation",
+    summary: { ja: "Control RigとPost Process AnimBPを使ったUE5プロシージャルスカートアニメーションの検証。", en: "A UE5 Control Rig study exploring procedural skirt animation with a Post Process AnimBP.", ko: "UE5 Control Rig와 Post Process AnimBP를 활용한 프로시저럴 스커트 애니메이션 연구입니다.", zh: "使用UE5 Control Rig与Post Process AnimBP研究程序化裙摆动画。" },
+    tags: ["Unreal Engine 5", "Control Rig", "Animation Blueprint", "Procedural Animation"]
+  },
+  {
     id: "ePrgRWvxt18", category: "ue5",
     title: "UE5 Chaos Cloth + Rigid Body",
     summary: { ja: "Chaos ClothとRigid Body Anim Nodeを組み合わせたSecondary Animationの検証。", en: "A secondary-animation study combining Chaos Cloth and the Rigid Body Anim Node.", ko: "Chaos Cloth와 Rigid Body Anim Node를 조합한 세컨더리 애니메이션 연구입니다.", zh: "结合Chaos Cloth与Rigid Body Anim Node的次级动画研究。" },
@@ -47,11 +53,5 @@ window.PORTFOLIO_MEDIA = [
     title: "MetaHuman Real-Time Facial Capture",
     summary: { ja: "Webcamを利用したMetaHumanのリアルタイムFacial Motion Capture検証。", en: "A real-time MetaHuman facial motion-capture test using a webcam.", ko: "웹캠을 활용한 MetaHuman 실시간 페이셜 모션캡처 테스트입니다.", zh: "使用网络摄像头进行MetaHuman实时面部动作捕捉测试。" },
     tags: ["Unreal Engine 5", "MetaHuman", "Facial", "Motion Capture"]
-  },
-  {
-    id: "ki6tiE4IKZ0", category: "ue5",
-    title: "UE5 Procedural Skirt Animation",
-    summary: { ja: "Control RigとPost Process AnimBPを使ったUE5プロシージャルスカートアニメーションの検証。", en: "A UE5 Control Rig study exploring procedural skirt animation with a Post Process AnimBP.", ko: "UE5 Control Rig와 Post Process AnimBP를 활용한 프로시저럴 스커트 애니메이션 연구입니다.", zh: "使用UE5 Control Rig与Post Process AnimBP研究程序化裙摆动画。" },
-    tags: ["Unreal Engine 5", "Control Rig", "Animation Blueprint", "Procedural Animation"]
   }
 ];
