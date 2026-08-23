@@ -30,7 +30,6 @@ window.PORTFOLIO_PROJECTS = [
       ko: "Project TAL 공식 트레일러",
       zh: "Project TAL 官方预告片"
     },
-    nda: true,
     sections: {
       overview: {
         ja: "Madngine · NX Studioで、プロトタイプ段階から参加しているコンソールゲームプロジェクトです。公開情報の範囲で、担当領域と制作フローへの貢献を紹介します。",
@@ -99,10 +98,10 @@ window.PORTFOLIO_PROJECTS = [
     nda: true,
     sections: {
       overview: {
-        ja: "NCSoftのMMORPG「AION 2」開発に契約社員として参加しました（2024年2月〜6月）。キャラクターカスタマイズに対応する装備アセットのリギング・スキニングを中心に担当し、実プロダクションの品質基準とパイプラインを経験しました。公開情報の範囲で担当領域を紹介します。",
-        en: "I joined NCSoft's MMORPG AION 2 as a contract rigging artist (Feb – Jun 2024), focusing on rigging and skinning equipment assets against the character customization system. This was my first experience with a large studio's production quality bar and pipeline. This page uses public information only.",
-        ko: "NCSoft의 MMORPG 'AION 2' 개발에 계약직으로 참여했습니다(2024년 2월~6월). 캐릭터 커스터마이징에 대응하는 장비 에셋의 리깅·스키닝을 중심으로 담당하며 대형 스튜디오의 품질 기준과 파이프라인을 경험했습니다. 공개 정보만 사용해 담당 영역을 소개합니다.",
-        zh: "我以合同制身份参与了NCSoft的MMORPG《AION 2》开发（2024年2月至6月），主要负责与角色体型自定义系统对应的装备资产绑定与蒙皮，并体验了大型工作室的品质标准与制作管线。本页仅使用公开信息。"
+        ja: "NCSoftのMMORPG「AION 2」開発に契約社員として参加しました（2024年2月〜6月）。キャラクターカスタマイズに対応する装備アセットのリギング・スキニングを担当し、実際の制作環境で品質基準とパイプラインを学びました。",
+        en: "I joined NCSoft's MMORPG AION 2 as a contract rigging artist (Feb – Jun 2024), focusing on rigging and skinning equipment assets for character customization. Working in a real production environment helped me learn its quality standards and pipeline.",
+        ko: "NCSoft의 MMORPG 'AION 2' 개발에 계약직으로 참여했습니다(2024년 2월~6월). 캐릭터 커스터마이징에 대응하는 장비 에셋의 리깅·스키닝을 담당하며 실제 제작 환경의 품질 기준과 파이프라인을 배우고 경험했습니다.",
+        zh: "我以合同制身份参与了NCSoft的MMORPG《AION 2》开发（2024年2月至6月），负责对应角色体型自定义的装备资产绑定与蒙皮，并在实际制作环境中学习了品质标准与制作管线。"
       },
       problem: {
         ja: "体型カスタマイズを持つMMORPGでは、武器・衣装・防具などの装備が全ての体型バリエーションで破綻なく変形する必要があります。大量の装備アセットに対する反復的なリギング・スキニング作業は、品質の一貫性と作業速度の両立が課題になります。",
