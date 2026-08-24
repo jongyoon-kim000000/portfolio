@@ -32,19 +32,19 @@ window.PORTFOLIO_MEDIA = [
   },
   {
     id: "FC9X30yKnuE", category: "max",
-    title: "3DsMax l  [Facial Riggng & Facial MotionCapture]",
+    title: "3DsMax | [Facial Riggng & Facial MotionCapture]",
     summary: { ja: "3ds Maxでのフェイシャルリギングとフェイシャルモーションキャプチャの記録。", en: "A 3ds Max study covering facial rigging and facial motion capture.", ko: "3ds Max 기반 페이셜 리깅과 페이셜 모션캡처 작업 기록입니다.", zh: "记录使用3ds Max进行面部绑定与面部动作捕捉的研究。" },
     tags: ["3ds Max", "Facial Rigging", "Motion Capture"]
   },
   {
     id: "Ic-qh_fLMFU", category: "max",
-    title: "R&D l Stylized Character Facial Rigging",
+    title: "R&D | Stylized Character Facial Rigging",
     summary: { ja: "スタイライズドキャラクターのフェイシャルリギングR&D。", en: "Facial rigging R&D for a stylized character.", ko: "스타일라이즈드 캐릭터 페이셜 리깅 R&D입니다.", zh: "风格化角色面部绑定R&D。" },
     tags: ["3ds Max", "Facial Rigging", "R&D"]
   },
   {
     id: "qC3BtDyFXtM", category: "max",
-    title: "3Ds Max l Character Animation Library",
+    title: "3Ds Max | Character Animation Library",
     summary: { ja: "3ds Maxで制作したキャラクターアニメーションライブラリ。", en: "A character animation library created in 3ds Max.", ko: "3ds Max로 제작한 캐릭터 애니메이션 라이브러리입니다.", zh: "使用3ds Max制作的角色动画库。" },
     tags: ["3ds Max", "Character Animation", "Animation Library"]
   },
