@@ -21,15 +21,18 @@
     const visible = activeCategory === "all" ? videos : videos.filter((video) => video.category === activeCategory);
     grid.setAttribute("role", "tabpanel");
     grid.setAttribute("aria-labelledby", `media-tab-${activeCategory}`);
-    grid.innerHTML = visible.length ? visible.map((video, index) => `<article class="media-card${video.featured ? " is-featured" : ""}" style="--card-order:${index}">
+    grid.innerHTML = visible.length ? visible.map((video, index) => {
+      const categoryLabel = i18n.text(`media.category.${video.category}`);
+      return `<article class="media-card${video.featured ? " is-featured" : ""}" style="--card-order:${index}">
       <div class="media-frame">
         <a class="media-play" href="https://www.youtube.com/watch?v=${escapeHtml(video.id)}" target="_blank" rel="noopener" aria-label="${escapeHtml(i18n.text("media.play"))}: ${escapeHtml(video.title)}">
           ${video.customCover ? `<span class="media-custom-cover" aria-hidden="true"><span class="cover-kicker">PORTFOLIO · 3DS MAX</span><strong>Rigging Portfolio</strong><span class="cover-meta">Kim JongYoon</span></span>` : `<img src="https://i.ytimg.com/vi/${escapeHtml(video.id)}/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/${escapeHtml(video.id)}/hqdefault.jpg" alt="${escapeHtml(video.title)}" loading="lazy" decoding="async">`}${video.preview ? `<video class="media-preview" muted loop playsinline preload="none" src="${escapeHtml(video.preview)}"></video>` : ""}
           <span class="play-mark" aria-hidden="true">▶</span><span class="media-tool">${video.featured ? `${escapeHtml(i18n.text("media.featured"))} · ` : ""}${escapeHtml(i18n.text(`media.category.${video.category}`))}</span>
         </a>
       </div>
-      <div class="media-card-copy"><h2>${escapeHtml(video.title)}</h2><p>${escapeHtml(i18n.localized(video.summary))}</p><ul class="tag-list">${video.tags.map((tag) => `<li class="tag">${escapeHtml(tag)}</li>`).join("")}</ul><a class="text-link" href="https://www.youtube.com/watch?v=${escapeHtml(video.id)}" target="_blank" rel="noreferrer">${escapeHtml(i18n.text("media.youtube"))} ↗</a></div>
-    </article>`).join("") : `<div class="media-empty"><strong>MotionBuilder</strong><p>${escapeHtml(i18n.text("media.empty"))}</p></div>`;
+      <div class="media-card-copy"><h2><span class="media-title-prefix">${escapeHtml(categoryLabel)} |</span> ${escapeHtml(video.title)}</h2><p>${escapeHtml(i18n.localized(video.summary))}</p><ul class="tag-list">${video.tags.map((tag) => `<li class="tag">${escapeHtml(tag)}</li>`).join("")}</ul><a class="text-link" href="https://www.youtube.com/watch?v=${escapeHtml(video.id)}" target="_blank" rel="noreferrer">${escapeHtml(i18n.text("media.youtube"))} ↗</a></div>
+    </article>`;
+    }).join("") : `<div class="media-empty"><strong>MotionBuilder</strong><p>${escapeHtml(i18n.text("media.empty"))}</p></div>`;
 
     tabs.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => {
       activeCategory = button.dataset.category;
