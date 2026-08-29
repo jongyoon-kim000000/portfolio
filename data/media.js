@@ -7,6 +7,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "Rigging", "MaxScript", "Portfolio"]
   },
   {
+    id: "SOAnzwsOyac", category: "max",
+    title: "Create IK/FK Rigs in Seconds | LIL IK/FK Tool",
+    summary: { ja: "3ds Max向けLIL IK/FK Toolを使い、IK/FKリグを短時間で構築するワークフロー。", en: "A 3ds Max workflow for creating IK/FK rigs in seconds with the LIL IK/FK Tool.", ko: "LIL IK/FK Tool을 활용해 3ds Max에서 IK/FK 리그를 빠르게 구축하는 워크플로입니다.", zh: "使用LIL IK/FK Tool在3ds Max中快速构建IK/FK绑定的工作流。" },
+    tags: ["3ds Max", "IK/FK", "Rigging", "Tool Development"]
+  },
+  {
     id: "yMtR-ILh2OQ", category: "max",
     title: "Biped Additional Bone Tool",
     summary: { ja: "Bipedを基盤にMuscle、Corrective Joint、Auto Skirt Rigの補助ボーン生成を自動化。", en: "Automating helper-bone creation for muscle, corrective-joint and auto-skirt rig workflows based on Biped.", ko: "Biped 기반 Muscle, Corrective Joint와 Auto Skirt Rig 보조 본 생성을 자동화한 작업입니다.", zh: "基于Biped自动生成Muscle、Corrective Joint与Auto Skirt Rig辅助骨骼。" },
