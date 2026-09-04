@@ -55,6 +55,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "Character Animation", "Animation Library"]
   },
   {
+    id: "v5QQ3zJ-ckc", category: "maya",
+    title: "NURBS Control Creator Tool | LIL Curve Forge",
+    summary: { ja: "MayaのNURBSカーブからリグ用コントロールを作成するLIL Curve Forgeの制作記録。", en: "A Maya tool workflow for creating rig controls from NURBS curves with LIL Curve Forge.", ko: "Maya NURBS 커브에서 리그 컨트롤을 생성하는 LIL Curve Forge 툴 제작 기록입니다.", zh: "使用LIL Curve Forge从Maya NURBS曲线创建绑定控制器的工具工作流。" },
+    tags: ["Maya", "NURBS", "Rigging", "Tool Development"]
+  },
+  {
     id: "yN-nqG9nZ9o", category: "maya",
     title: "MetaHuman to Maya Import",
     summary: { ja: "MetaHumanアセットをMayaへ移行するキャラクターワークフローの検証。", en: "A character-workflow study for bringing MetaHuman assets into Maya.", ko: "MetaHuman 에셋을 Maya로 가져오는 캐릭터 워크플로 연구입니다.", zh: "将MetaHuman资产导入Maya的角色工作流研究。" },
