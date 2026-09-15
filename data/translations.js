@@ -2,7 +2,7 @@
 window.PORTFOLIO_TRANSLATIONS = {
   ja: {
     "accessibility.skip":"コンテンツへ移動","nav.menu":"メニュー","nav.work":"Work","nav.projects":"Projects","nav.production":"Production","nav.growth":"Growth","nav.skills":"Skills","nav.about":"About","nav.contact":"Contact",
-    "hero.availability":"Suwon, South Korea","hero.summary":"キャラクターリギングを中心に、リギングツール、自動化、アニメーションパイプライン、Unreal Engineでのキャラクター実装に取り組んでいます。","hero.workCta":"選考作品を見る","hero.channelCta":"YouTube チャンネル",
+    "hero.availability":"Suwon, South Korea","hero.summary":"キャラクターリギングを中心に、リギングツール、自動化、アニメーションパイプライン、Unreal Engineでのキャラクター実装に取り組んでいます。","hero.riggingCta":"リギング作品を見る","hero.workCta":"主要作品を見る","hero.channelCta":"YouTube チャンネル",
     "quick.current":"Current","quick.focus":"Focus","quick.tools":"Production Tools","quick.development":"Development",
     "work.title":"選考作品","work.intro":"リギング、ツール、リアルタイム実装をつなぐ仕事。","production.title":"プロダクション経験","production.intro":"コンソールゲーム制作におけるリギングからエンジン実装まで。","growth.title":"成長の軌跡","growth.intro":"学びをプロダクションへつなげてきた継続的なプロセス。","skills.title":"技術領域","skills.intro":"実務経験と現在の学習領域を明確に区分しています。",
     "about.title":"キャラクターリギングを軸に制作を支える","about.p1":"現在、Madngine NX Studioにてキャラクターリギングを中心に、リギングツール、自動化、アニメーションパイプライン、Unreal Engineでのキャラクター実装を担当しています。","about.p2":"リガーとしてキャラクターの構造と変形を設計し、MaxScriptやPythonによるツール開発を通じて、アニメーション制作からエンジン実装までの流れを支えています。","about.goal":"キャラクターリギングを軸に、リギングツール、アニメーションパイプラインとUnreal EngineをつなぐTechnical Riggerを目指しています。",
@@ -11,7 +11,7 @@ window.PORTFOLIO_TRANSLATIONS = {
   },
   en: {
     "accessibility.skip":"Skip to content","nav.menu":"Menu","nav.work":"Work","nav.projects":"Projects","nav.production":"Production","nav.growth":"Growth","nav.skills":"Skills","nav.about":"About","nav.contact":"Contact",
-    "hero.availability":"Suwon, South Korea","hero.summary":"I focus on character rigging, rigging tools and automation, animation pipelines, and Unreal Engine character implementation.","hero.workCta":"View Selected Work","hero.channelCta":"YouTube Channel",
+    "hero.availability":"Suwon, South Korea","hero.summary":"I focus on character rigging, rigging tools and automation, animation pipelines, and Unreal Engine character implementation.","hero.riggingCta":"View Rigging Work","hero.workCta":"View Selected Work","hero.channelCta":"YouTube Channel",
     "quick.current":"Current","quick.focus":"Focus","quick.tools":"Production Tools","quick.development":"Development",
     "work.title":"Selected Work","work.intro":"Work connecting rigging, tools and real-time implementation.","production.title":"Production Experience","production.intro":"From character rigging to in-engine implementation for console game production.","growth.title":"Growth","growth.intro":"A continuous process of turning learning into production capability.","skills.title":"Technical Areas","skills.intro":"Production experience and current learning areas are clearly separated.",
     "about.title":"Supporting production through character rigging","about.p1":"I currently work at Madngine NX Studio with character rigging as my primary focus, alongside rigging tools, automation, animation pipelines and Unreal Engine character implementation.","about.p2":"As a rigger, I design character structures and deformation, then support the flow from animation authoring to engine implementation through MaxScript and Python tools.","about.goal":"I aim to become a technical rigger who connects character rigging, rigging tools, animation pipelines and Unreal Engine.",
@@ -20,7 +20,7 @@ window.PORTFOLIO_TRANSLATIONS = {
   },
   ko: {
     "accessibility.skip":"본문으로 이동","nav.menu":"메뉴","nav.work":"작업","nav.projects":"프로젝트","nav.production":"프로덕션","nav.growth":"성장","nav.skills":"기술","nav.about":"소개","nav.contact":"연락",
-    "hero.availability":"대한민국 수원","hero.summary":"캐릭터 리깅을 중심으로 리깅 도구·자동화, 애니메이션 파이프라인과 Unreal Engine 캐릭터 구현을 담당합니다.","hero.workCta":"주요 작업 보기","hero.channelCta":"YouTube 채널",
+    "hero.availability":"대한민국 수원","hero.summary":"캐릭터 리깅을 중심으로 리깅 도구·자동화, 애니메이션 파이프라인과 Unreal Engine 캐릭터 구현을 담당합니다.","hero.riggingCta":"리깅 작업 보기","hero.workCta":"주요 작업 보기","hero.channelCta":"YouTube 채널",
     "quick.current":"현재","quick.focus":"전문 분야","quick.tools":"프로덕션 도구","quick.development":"개발",
     "work.title":"주요 작업","work.intro":"리깅, 도구와 실시간 구현을 연결하는 작업입니다.","production.title":"프로덕션 경험","production.intro":"콘솔 게임 제작의 캐릭터 리깅부터 엔진 구현까지 담당합니다.","growth.title":"성장 과정","growth.intro":"학습을 실제 제작 역량으로 연결해 온 과정입니다.","skills.title":"기술 영역","skills.intro":"실무 경험과 현재 학습 중인 영역을 명확하게 구분했습니다.",
     "about.title":"캐릭터 리깅을 중심으로 제작을 지원합니다","about.p1":"현재 Madngine NX Studio에서 캐릭터 리깅을 중심으로 리깅 도구·자동화, 애니메이션 파이프라인과 Unreal Engine 캐릭터 구현을 담당하고 있습니다.","about.p2":"리거로서 캐릭터 구조와 변형을 설계하고, MaxScript와 Python 도구를 통해 애니메이션 제작부터 엔진 구현까지의 흐름을 지원합니다.","about.goal":"캐릭터 리깅을 중심으로 리깅 도구, 애니메이션 파이프라인과 Unreal Engine을 연결하는 Technical Rigger를 지향합니다.",
@@ -29,7 +29,7 @@ window.PORTFOLIO_TRANSLATIONS = {
   },
   zh: {
     "accessibility.skip":"跳转到正文","nav.menu":"菜单","nav.work":"作品","nav.projects":"项目","nav.production":"项目经验","nav.growth":"成长","nav.skills":"技能","nav.about":"关于","nav.contact":"联系",
-    "hero.availability":"韩国水原","hero.summary":"我以角色绑定为核心，负责绑定工具与自动化、动画管线以及Unreal Engine角色实现。","hero.workCta":"查看精选作品","hero.channelCta":"YouTube 频道",
+    "hero.availability":"韩国水原","hero.summary":"我以角色绑定为核心，负责绑定工具与自动化、动画管线以及Unreal Engine角色实现。","hero.riggingCta":"查看绑定作品","hero.workCta":"查看精选作品","hero.channelCta":"YouTube 频道",
     "quick.current":"目前","quick.focus":"专业方向","quick.tools":"制作工具","quick.development":"开发",
     "work.title":"精选作品","work.intro":"连接角色绑定、工具与实时实现的技术工作。","production.title":"项目制作经验","production.intro":"从主机游戏角色绑定到引擎内实现。","growth.title":"成长轨迹","growth.intro":"持续将学习转化为实际制作能力。","skills.title":"技术领域","skills.intro":"明确区分实际项目经验与当前学习领域。",
     "about.title":"以角色绑定为核心支持制作","about.p1":"目前我在Madngine NX Studio以角色绑定为主要方向，同时负责绑定工具、自动化、动画管线和Unreal Engine角色实现。","about.p2":"作为绑定美术，我设计角色结构与变形，并通过MaxScript与Python工具支持从动画制作到引擎实现的流程。","about.goal":"我的目标是成为连接角色绑定、绑定工具、动画管线与Unreal Engine的Technical Rigger。",

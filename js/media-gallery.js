@@ -13,13 +13,20 @@
     const grid = document.querySelector("#media-grid");
     if (!tabs || !grid) return;
 
+    const focusedTabCategory = !focusActiveTab && tabs.contains(document.activeElement) && document.activeElement?.getAttribute("role") === "tab"
+      ? document.activeElement.dataset.category
+      : null;
+
     tabs.innerHTML = categories.map((category) => {
       const count = category === "all" ? videos.length : videos.filter((video) => video.category === category).length;
       return `<button type="button" role="tab" id="media-tab-${category}" aria-controls="media-grid" aria-selected="${category === activeCategory}" tabindex="${category === activeCategory ? "0" : "-1"}" data-category="${category}"><strong>${escapeHtml(i18n.text(`media.category.${category}`))}</strong><span class="media-tab-meta"><em>${escapeHtml(i18n.text(`media.categoryHint.${category}`))}</em><b>${String(count).padStart(2, "0")}</b></span></button>`;
     }).join("");
+    const filterTitle = document.querySelector("#media-filter-title");
+    if (filterTitle) tabs.setAttribute("aria-labelledby", "media-filter-title");
 
     const visible = activeCategory === "all" ? videos : videos.filter((video) => video.category === activeCategory);
     grid.setAttribute("role", "tabpanel");
+    grid.setAttribute("tabindex", "0");
     grid.setAttribute("aria-labelledby", `media-tab-${activeCategory}`);
     grid.innerHTML = visible.length ? visible.map((video, index) => {
       const categoryLabel = i18n.text(`media.category.${video.category}`);
@@ -32,14 +39,14 @@
       </div>
       <div class="media-card-copy"><h2><span class="media-title-prefix">${escapeHtml(categoryLabel)} |</span> ${escapeHtml(video.title)}</h2><p>${escapeHtml(i18n.localized(video.summary))}</p><ul class="tag-list">${video.tags.map((tag) => `<li class="tag">${escapeHtml(tag)}</li>`).join("")}</ul><a class="text-link" href="https://www.youtube.com/watch?v=${escapeHtml(video.id)}" target="_blank" rel="noreferrer">${escapeHtml(i18n.text("media.youtube"))} ↗</a></div>
     </article>`;
-    }).join("") : `<div class="media-empty"><strong>MotionBuilder</strong><p>${escapeHtml(i18n.text("media.empty"))}</p></div>`;
+    }).join("") : `<div class="media-empty"><strong>${escapeHtml(i18n.text(`media.category.${activeCategory}`))}</strong><p>${escapeHtml(i18n.text("media.empty"))}</p></div>`;
 
     tabs.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => {
       activeCategory = button.dataset.category;
       const url = new URL(window.location.href);
       if (activeCategory === "all") url.searchParams.delete("tool"); else url.searchParams.set("tool", activeCategory);
       history.replaceState({}, "", url);
-      render(false);
+      render(true);
     }));
     if (!reducedMotion.matches && !coarsePointer.matches) {
       grid.querySelectorAll(".media-preview").forEach((previewVideo) => {
@@ -60,10 +67,11 @@
       image.addEventListener("load", useFallback, { once: true });
       if (image.complete) useFallback();
     });
-    if (focusActiveTab) {
-      const activeTab = tabs.querySelector('[aria-selected="true"]');
+    const tabToFocus = focusActiveTab ? activeCategory : focusedTabCategory;
+    if (tabToFocus) {
+      const activeTab = tabs.querySelector(`#media-tab-${tabToFocus}`);
       activeTab?.focus({ preventScroll: true });
-      activeTab?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      activeTab?.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "nearest", inline: "center" });
     }
   }
 

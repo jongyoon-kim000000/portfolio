@@ -17,8 +17,9 @@ html[lang="ko"] .media-hero h1 { max-width: none; white-space: nowrap; font-size
 .media-tabs button[aria-selected="true"] { background: var(--text); color: var(--bg); }
 .media-tabs button[aria-selected="true"] .media-tab-meta { color: #5c6067; }
 .media-tabs button:focus { outline: none; }
-.media-tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.media-tabs button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
 .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; padding-top: 32px; }
+.media-grid:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 6px; }
 .media-card { overflow: hidden; border: 1px solid var(--border); background: var(--surface); }
 .media-card.is-featured { border-color: #4a4f57; box-shadow: inset 0 2px 0 var(--accent); }
 .media-frame { position: relative; aspect-ratio: 16/9; background: #050607; overflow: hidden; }
@@ -27,12 +28,12 @@ html[lang="ko"] .media-hero h1 { max-width: none; white-space: nowrap; font-size
 .media-play img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s var(--ease), filter .35s; }
 .media-play:hover img { transform: scale(1.025); filter: brightness(.72); }
 .media-title-prefix { color: var(--accent); font-size: .52em; font-weight: 800; letter-spacing: .08em; vertical-align: .14em; white-space: nowrap; }
-.media-play:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
+.media-play:focus-visible { outline: 2px solid var(--accent-2); outline-offset: -4px; }
 .play-mark { position: absolute; z-index: 2; left: 50%; top: 50%; display: grid; place-items: center; width: 58px; height: 58px; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; background: rgba(5,6,7,.7); color: #fff; transform: translate(-50%,-50%); }
-.media-tool { position: absolute; z-index: 2; left: 18px; bottom: 16px; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .12em; }
+.media-tool { position: absolute; z-index: 2; left: 18px; bottom: 16px; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
 .media-card-copy { padding: 26px; }
 .media-card-copy h2 { font-size: 20px; line-height: 1.3; letter-spacing: -.02em; }
-.media-card-copy>p { min-height: 48px; margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.media-card-copy>p { min-height: 48px; margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .media-empty { grid-column: 1/-1; padding: 72px 30px; border: 1px solid var(--border); text-align: center; }
 .media-empty strong { font-size: 22px; }
 .media-empty p { margin-top: 10px; color: var(--muted); font-size: 12px; }
@@ -41,11 +42,12 @@ html[lang="ko"] .media-hero h1 { max-width: none; white-space: nowrap; font-size
   .media-card { animation: media-card-enter .46s var(--ease) both; animation-delay: calc(var(--card-order, 0) * 55ms); }
   @keyframes media-card-enter { from { opacity: 0; transform: translate3d(20px, 7px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
 }
-@media (max-width: 600px) { .media-hero { padding-block: 76px 52px; } .media-hero h1, html[lang="ko"] .media-hero h1 { max-width: 100%; white-space: normal; font-size: clamp(48px,15vw,72px); } .media-hero-copy { grid-template-columns: 1fr; } .media-tabs { margin-inline: -16px; padding: 8px 54px 8px 16px; border-radius: 0; scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x proximity; } .media-tabs::-webkit-scrollbar { display: none; } .media-tabs button{min-width:170px;scroll-snap-align:start} .media-swipe-hint { display: block; margin: 10px 0 0; color: var(--faint); font-size: 11px; letter-spacing: .03em; text-align: right; } }
+.media-card:focus-within { animation: none; opacity: 1; transform: none; }
+@media (max-width: 600px) { .media-hero { padding-block: 76px 52px; } .media-hero h1, html[lang="ko"] .media-hero h1 { max-width: 100%; white-space: normal; font-size: clamp(48px,15vw,72px); } .media-hero-copy { grid-template-columns: 1fr; } .media-tabs { margin-inline: -16px; padding: 8px 54px 8px 16px; grid-template-columns: repeat(5,minmax(clamp(136px,42vw,154px),1fr)); border-radius: 0; scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x proximity; } .media-tabs::-webkit-scrollbar { display: none; } .media-tabs button{min-width:clamp(136px,42vw,154px);min-height:64px;padding:12px 14px;scroll-snap-align:start} .media-swipe-hint { display: block; margin: 10px 0 0; color: var(--faint); font-size: 11px; letter-spacing: .03em; text-align: right; } }
 
 .media-custom-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;color:#f4f5f6;text-align:center;background:radial-gradient(circle at 86% 10%,rgba(189,61,69,.12),transparent 30%),#050607;transition:filter .35s}
 .media-custom-cover::before,.media-custom-cover::after{content:"";position:absolute;width:18px;height:18px;border-color:rgba(255,255,255,.2)}.media-custom-cover::before{left:22px;top:22px;border-left:1px solid;border-top:1px solid}.media-custom-cover::after{right:22px;bottom:22px;border-right:1px solid;border-bottom:1px solid}
-.media-custom-cover span,.media-custom-cover strong{position:relative;z-index:1}.cover-kicker{color:#8e949d;font-size:8px;font-weight:800;letter-spacing:.16em}.media-custom-cover strong{margin-top:20px;font-size:clamp(30px,4.4vw,58px);font-weight:350;letter-spacing:-.045em;line-height:1.02}.cover-meta{margin-top:16px;color:#aeb3bb;font-size:clamp(11px,1.4vw,17px);font-weight:350;letter-spacing:.08em}.media-play:hover .media-custom-cover{filter:brightness(.78)}
+.media-custom-cover span,.media-custom-cover strong{position:relative;z-index:1}.cover-kicker{color:#8e949d;font-size:9px;font-weight:800;letter-spacing:.16em}.media-custom-cover strong{margin-top:20px;font-size:clamp(30px,4.4vw,58px);font-weight:350;letter-spacing:-.045em;line-height:1.02}.cover-meta{margin-top:16px;color:#aeb3bb;font-size:clamp(11px,1.4vw,17px);font-weight:350;letter-spacing:.08em}.media-play:hover .media-custom-cover{filter:brightness(.78)}
 
 /* Hover video preview: rendered only when a media entry declares a preview field */
 .media-preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; pointer-events: none; }

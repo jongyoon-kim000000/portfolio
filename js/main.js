@@ -39,14 +39,40 @@
     const header = document.querySelector("[data-header]");
     const toggle = document.querySelector(".nav-toggle");
     const nav = document.querySelector("#primary-nav");
-    const closeNav = () => { nav?.classList.remove("is-open"); toggle?.setAttribute("aria-expanded", "false"); };
+    const mobileNav = window.matchMedia("(max-width: 900px)");
+    let wasMobile = mobileNav.matches;
+    const closeNav = ({ restoreFocus = false } = {}) => {
+      const wasOpen = Boolean(nav?.classList.contains("is-open"));
+      if (!wasOpen) return false;
+      nav.classList.remove("is-open");
+      toggle?.setAttribute("aria-expanded", "false");
+      if (restoreFocus && mobileNav.matches && nav.contains(document.activeElement)) {
+        toggle?.focus({ preventScroll: true });
+      }
+      return true;
+    };
     toggle?.addEventListener("click", () => {
       const open = !nav.classList.contains("is-open");
       nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", String(open));
     });
     nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeNav));
-    document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeNav(); });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && mobileNav.matches && nav?.classList.contains("is-open")) {
+        closeNav({ restoreFocus: true });
+      }
+    });
+    window.addEventListener("resize", () => {
+      const isMobile = mobileNav.matches;
+      if (wasMobile && !isMobile) {
+        const focusIsToggle = document.activeElement === toggle;
+        closeNav();
+        if (focusIsToggle) nav?.querySelector("a")?.focus({ preventScroll: true });
+      } else if (!wasMobile && isMobile && nav?.contains(document.activeElement) && !nav.classList.contains("is-open")) {
+        toggle?.focus({ preventScroll: true });
+      }
+      wasMobile = isMobile;
+    }, { passive: true });
     const updateHeader = () => header?.classList.toggle("is-scrolled", window.scrollY > 20);
     updateHeader();
     window.addEventListener("scroll", updateHeader, { passive: true });

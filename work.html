@@ -16,19 +16,19 @@
   <title>Work & Media Library | Jongyoon Kim</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/work.css">
-  <link rel="stylesheet" href="css/polish.css">
-  <script src="data/translations.js" defer></script>
+  <link rel="stylesheet" href="css/work.css?v=20260915-1">
+  <link rel="stylesheet" href="css/polish.css?v=20260915-1">
+  <script src="data/translations.js?v=20260915-1" defer></script>
   <script src="data/media.js?v=20260904-1" defer></script>
   <script src="js/i18n.js" defer></script>
-  <script src="js/media-gallery.js?v=20260829-2" defer></script>
+  <script src="js/media-gallery.js?v=20260915-1" defer></script>
   <script src="js/visuals.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#media-grid" data-i18n="accessibility.skip">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="accessibility.skip">Skip to content</a>
   <header class="site-header is-scrolled" data-header>
     <div class="shell header-inner">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><img src="assets/icons/jongyoon-kim-mark.png" alt=""></span><span class="brand-copy">JONGYOON KIM<small>TECHNICAL ANIMATOR</small></span></a>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><img src="assets/icons/jongyoon-kim-mark.png" alt=""></span><span class="brand-copy">JONGYOON KIM<small>RIGGING ARTIST</small></span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only" data-i18n="nav.menu">Menu</span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
         <div class="nav-item">
@@ -69,7 +69,7 @@
       </div>
     </div>
   </header>
-  <main class="media-page">
+  <main id="main" class="media-page" tabindex="-1">
     <section class="media-hero shell">
       <p class="section-index">WORK / MEDIA LIBRARY</p>
       <h1 data-i18n="media.title">DCC & REAL-TIME STUDIES</h1>
@@ -77,12 +77,12 @@
     </section>
     <section class="media-library shell" aria-labelledby="media-filter-title">
       <h2 id="media-filter-title" class="sr-only" data-i18n="media.filterTitle">Filter videos by tool</h2>
-      <div id="media-tabs" class="media-tabs" role="tablist"></div>
+      <div id="media-tabs" class="media-tabs" role="tablist" aria-labelledby="media-filter-title"></div>
       <p class="media-swipe-hint" aria-hidden="true" data-i18n="media.swipeHint">Swipe to explore tool categories →</p>
       <div id="media-grid" class="media-grid"></div>
     </section>
   </main>
-  <footer class="site-footer"><div class="shell"><div><strong>Jongyoon Kim</strong><span>Technical Animator / Rigging Artist</span></div><p>© Jongyoon Kim</p></div></footer>
-  <script src="js/main.js" defer></script>
+  <footer class="site-footer"><div class="shell"><div><strong>Jongyoon Kim</strong><span>Rigging Artist / Technical Animator</span></div><p>© Jongyoon Kim</p></div></footer>
+  <script src="js/main.js?v=20260915-1" defer></script>
 </body>
 </html>
