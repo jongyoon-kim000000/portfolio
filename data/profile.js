@@ -57,7 +57,6 @@ window.PORTFOLIO_PROFILE = {
     { name: "Technical Animation", detail: { ja: "リギングと実装の接続", en: "Bridging rigging and implementation", ko: "리깅과 구현 연결", zh: "连接绑定与实现" }, status: "working" },
     { name: "Maya", detail: { ja: "リギング・スキニング", en: "Rigging & skinning", ko: "리깅·스키닝", zh: "绑定与蒙皮" }, status: "learning" },
     { name: "Maya Python", detail: { ja: "リグ自動化", en: "Rig automation", ko: "리그 자동화", zh: "绑定自动化" }, status: "learning" },
-    { name: "mGear", detail: { ja: "モジュラーリグ", en: "Modular rig architecture", ko: "모듈형 리그", zh: "模块化绑定架构" }, status: "learning" },
   ],
   community: {
     visible: false,
