@@ -55,6 +55,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "Character Animation", "Animation Library"]
   },
   {
+    id: "rRms6PjphTE", category: "maya",
+    title: "Maya to 3ds Max & Unreal Engine | LIL Rig Bridge Demo",
+    summary: { ja: "Mayaから3ds Max、Unreal EngineへリグデータをつなぐLIL Rig Bridgeのデモ。", en: "A LIL Rig Bridge demo connecting rig data from Maya to 3ds Max and Unreal Engine.", ko: "Maya에서 3ds Max와 Unreal Engine으로 리그 데이터를 연결하는 LIL Rig Bridge 데모입니다.", zh: "演示使用LIL Rig Bridge将绑定数据从Maya连接到3ds Max与Unreal Engine。" },
+    tags: ["Maya", "3ds Max", "Unreal Engine", "Pipeline"]
+  },
+  {
     id: "v5QQ3zJ-ckc", category: "maya",
     title: "NURBS Control Creator Tool | LIL Curve Forge",
     summary: { ja: "MayaのNURBSカーブからリグ用コントロールを作成するLIL Curve Forgeの制作記録。", en: "A Maya tool workflow for creating rig controls from NURBS curves with LIL Curve Forge.", ko: "Maya NURBS 커브에서 리그 컨트롤을 생성하는 LIL Curve Forge 툴 제작 기록입니다.", zh: "使用LIL Curve Forge从Maya NURBS曲线创建绑定控制器的工具工作流。" },
