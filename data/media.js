@@ -7,6 +7,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "Rigging", "MaxScript", "Portfolio"]
   },
   {
+    id: "4IhUI2I-Ino", category: "max",
+    title: "Animation Direction Flip Tool",
+    summary: { ja: "3ds Maxでアニメーションの方向を反転するツールの制作デモ。", en: "A 3ds Max tool demo for flipping animation direction in a rigging workflow.", ko: "3ds Max에서 애니메이션 방향을 반전하는 툴 제작 데모입니다.", zh: "演示在3ds Max绑定工作流中反转动画方向的工具。" },
+    tags: ["3ds Max", "MaxScript", "Animation", "Tool Development"]
+  },
+  {
     id: "SOAnzwsOyac", category: "max",
     title: "Create IK/FK Rigs in Seconds | LIL IK/FK Tool",
     summary: { ja: "3ds Max向けLIL IK/FK Toolを使い、IK/FKリグを短時間で構築するワークフロー。", en: "A 3ds Max workflow for creating IK/FK rigs in seconds with the LIL IK/FK Tool.", ko: "LIL IK/FK Tool을 활용해 3ds Max에서 IK/FK 리그를 빠르게 구축하는 워크플로입니다.", zh: "使用LIL IK/FK Tool在3ds Max中快速构建IK/FK绑定的工作流。" },
