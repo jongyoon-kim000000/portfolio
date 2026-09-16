@@ -67,12 +67,6 @@ window.PORTFOLIO_MEDIA = [
     tags: ["Maya", "NURBS", "Rigging", "Tool Development"]
   },
   {
-    id: "yN-nqG9nZ9o", category: "maya",
-    title: "MetaHuman to Maya Import",
-    summary: { ja: "MetaHumanアセットをMayaへ移行するキャラクターワークフローの検証。", en: "A character-workflow study for bringing MetaHuman assets into Maya.", ko: "MetaHuman 에셋을 Maya로 가져오는 캐릭터 워크플로 연구입니다.", zh: "将MetaHuman资产导入Maya的角色工作流研究。" },
-    tags: ["Maya", "MetaHuman", "Character Workflow"]
-  },
-  {
     id: "ki6tiE4IKZ0", category: "ue5",
     title: "UE5 Procedural Skirt Animation",
     summary: { ja: "Control RigとPost Process AnimBPを使ったUE5プロシージャルスカートアニメーションの検証。", en: "A UE5 Control Rig study exploring procedural skirt animation with a Post Process AnimBP.", ko: "UE5 Control Rig와 Post Process AnimBP를 활용한 프로시저럴 스커트 애니메이션 연구입니다.", zh: "使用UE5 Control Rig与Post Process AnimBP研究程序化裙摆动画。" },
