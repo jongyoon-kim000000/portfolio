@@ -63,7 +63,7 @@ window.PORTFOLIO_MEDIA = [
   {
     id: "R-N0ebayTBA", category: "maya",
     title: "UE Fab Anim Data Retarget Tool",
-    summary: { ja: "MayaでUE Fabのアニメーションデータをリターゲットするツールの検証。", en: "A Maya tool study for retargeting animation data from UE Fab assets.", ko: "UE Fab 애니메이션 데이터를 Maya에서 리타깃하는 툴 연구입니다.", zh: "研究在Maya中重定向UE Fab动画数据的工具流程。" },
+    summary: { ja: "UE FabのアニメーションデータをMayaでリターゲットするために完成させたツール。", en: "A completed Maya tool for retargeting animation data from UE Fab assets.", ko: "UE Fab 애니메이션 데이터를 Maya에서 리타깃하기 위해 완성한 툴입니다.", zh: "用于在Maya中重定向UE Fab动画数据的完整工具。" },
     tags: ["Maya", "UE Fab", "Retargeting", "Animation Pipeline"]
   },
   {
@@ -77,6 +77,12 @@ window.PORTFOLIO_MEDIA = [
     title: "NURBS Control Creator Tool | LIL Curve Forge",
     summary: { ja: "MayaのNURBSカーブからリグ用コントロールを作成するLIL Curve Forgeの制作記録。", en: "A Maya tool workflow for creating rig controls from NURBS curves with LIL Curve Forge.", ko: "Maya NURBS 커브에서 리그 컨트롤을 생성하는 LIL Curve Forge 툴 제작 기록입니다.", zh: "使用LIL Curve Forge从Maya NURBS曲线创建绑定控制器的工具工作流。" },
     tags: ["Maya", "NURBS", "Rigging", "Tool Development"]
+  },
+  {
+    id: "EhutrsuW-jU", category: "motionbuilder",
+    title: "HIK Tail Rig Extension",
+    summary: { ja: "MotionBuilder SDKを基盤にHIKシステムを拡張し、Tail FK自動生成、HIK双方向Plot、リアルタイムBend制御を統合したリギング・アニメーションツール。", en: "A rigging and animation tool built on the MotionBuilder SDK, extending HIK with automatic Tail FK generation, bidirectional HIK plotting and real-time Bend control.", ko: "MotionBuilder SDK를 기반으로 HIK 시스템을 확장해 Tail FK 자동 생성, HIK 양방향 Plot, 실시간 Bend 제어를 통합한 리깅·애니메이션 도구입니다.", zh: "基于MotionBuilder SDK扩展HIK系统，整合Tail FK自动生成、HIK双向Plot与实时Bend控制的绑定与动画工具。" },
+    tags: ["MotionBuilder", "SDK", "HIK", "Tail FK", "Animation Tool"]
   },
   {
     id: "ki6tiE4IKZ0", category: "ue5",
