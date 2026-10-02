@@ -61,6 +61,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "Character Animation", "Animation Library"]
   },
   {
+    id: "R-N0ebayTBA", category: "maya",
+    title: "UE Fab Anim Data Retarget Tool",
+    summary: { ja: "MayaでUE Fabのアニメーションデータをリターゲットするツールの検証。", en: "A Maya tool study for retargeting animation data from UE Fab assets.", ko: "UE Fab 애니메이션 데이터를 Maya에서 리타깃하는 툴 연구입니다.", zh: "研究在Maya中重定向UE Fab动画数据的工具流程。" },
+    tags: ["Maya", "UE Fab", "Retargeting", "Animation Pipeline"]
+  },
+  {
     id: "rRms6PjphTE", category: "maya",
     title: "Maya to 3ds Max & Unreal Engine | LIL Rig Bridge Demo",
     summary: { ja: "Mayaから3ds Max、Unreal EngineへリグデータをつなぐLIL Rig Bridgeのデモ。", en: "A LIL Rig Bridge demo connecting rig data from Maya to 3ds Max and Unreal Engine.", ko: "Maya에서 3ds Max와 Unreal Engine으로 리그 데이터를 연결하는 LIL Rig Bridge 데모입니다.", zh: "演示使用LIL Rig Bridge将绑定数据从Maya连接到3ds Max与Unreal Engine。" },
