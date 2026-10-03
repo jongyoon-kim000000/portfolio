@@ -163,3 +163,5 @@ body::after { content: ""; position: fixed; inset: 0; z-index: 2; pointer-events
 @media (prefers-reduced-motion: reduce) {
   .section-surface, .section-surface::after, .section-heading h2 { animation: none !important; }
 }
+
+.production-meta .production-promotion { color: var(--accent); font-size: 11px; font-weight: 750; letter-spacing: .03em; }
