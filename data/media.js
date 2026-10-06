@@ -61,6 +61,12 @@ window.PORTFOLIO_MEDIA = [
     tags: ["3ds Max", "Character Animation", "Animation Library"]
   },
   {
+    id: "CfwaIkLmZMQ", category: "maya",
+    title: "FBX Skeleton & Skin Cleanup Tool",
+    summary: { ja: "FBXのスケルトンとスキンデータを整理するMayaツールのデモ。", en: "A Maya tool demo for cleaning up FBX skeleton and skin data.", ko: "FBX 스켈레톤과 스킨 데이터를 정리하는 Maya 툴 데모입니다.", zh: "用于整理FBX骨架与蒙皮数据的Maya工具演示。" },
+    tags: ["Maya", "FBX", "Skeleton", "Skinning", "Tool Development"]
+  },
+  {
     id: "R-N0ebayTBA", category: "maya",
     title: "UE Fab Anim Data Retarget Tool",
     summary: { ja: "UE FabのアニメーションデータをMayaでリターゲットするために完成させたツール。", en: "A completed Maya tool for retargeting animation data from UE Fab assets.", ko: "UE Fab 애니메이션 데이터를 Maya에서 리타깃하기 위해 완성한 툴입니다.", zh: "用于在Maya中重定向UE Fab动画数据的完整工具。" },
